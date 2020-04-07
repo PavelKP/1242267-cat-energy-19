@@ -21,9 +21,9 @@
 }
 
 .site-list__link:hover:not(.site-list__link--active) {
-  color: rgba(17, 17, 17, 0.6);
+  color: $menu-hover;
 }
 
 .site-list__link:active:not(.site-list__link--active) {
-  color: rgba(17, 17, 17, 0.3);
+  color: $menu-active;
 }

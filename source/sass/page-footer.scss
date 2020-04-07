@@ -2,9 +2,19 @@
   background-color: $white-four;
 }
 
+.page-footer__logo-wrapper {
+  padding-top: 39px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid $grey-border;
+}
+
 .page-footer__copyright-link {
   font-family: $arial;
   font-size: 16px;
   line-height: 16px;
   color: $black-one;
+}
+
+.page-footer__copyright {
+  padding: 22px 0;
 }

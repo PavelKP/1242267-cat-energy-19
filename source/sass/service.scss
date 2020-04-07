@@ -1,11 +1,21 @@
 .container {
   width: 280px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .container-wide {
   width: 320px;
   margin: 0 auto;
-  border: 1px solid blue;
+}
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
