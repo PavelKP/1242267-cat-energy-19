@@ -1,0 +1,31 @@
+.main-header {
+  padding: 29px 22px 18px 18px;
+
+  background-image:  url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient($leaf 305px, $white-three 305px);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-header__heading {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+
+  &--white {
+    color: $white-three;
+  }
+}
+
+.main-header__description {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--white {
+    color: $white-three;
+  }
+}

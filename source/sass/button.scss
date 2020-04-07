@@ -1,0 +1,14 @@
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: $white-three;
+  text-transform: uppercase;
+
+  @include button-reset;
+
+  &--green {
+    background-color: $leaf;
+  }
+}

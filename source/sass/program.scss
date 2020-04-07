@@ -1,0 +1,29 @@
+.program__wrapper {
+  background-color: $white-four;
+  padding: 22px 21px;
+}
+
+.program__heading {
+  @include heading-reset;
+
+  font-size: 24px;
+  font-weight: 400;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.program__description {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $black-one;
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $black-three;
+  text-transform: uppercase;
+}

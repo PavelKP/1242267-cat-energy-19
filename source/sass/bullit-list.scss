@@ -1,0 +1,7 @@
+.bullit-list {
+  font-family: $arial;
+  line-height: 18px;
+  color: $black-one;
+
+  @include list-reset;
+}

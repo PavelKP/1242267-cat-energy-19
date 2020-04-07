@@ -3,7 +3,16 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "global.scss";
+@import "service.scss";
+@import "visually-hidden.scss";
 
-body {
-  background-color: seashell;
-}
+/*  blocks */
+@import "page-header.scss";
+@import "site-list.scss";
+@import "main.scss";
+@import "main-header.scss";
+@import "program.scss";
+@import "info.scss";
+@import "bullit-list";
+@import "page-footer.scss";
+@import "button.scss";

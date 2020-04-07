@@ -1,7 +1,16 @@
 $oswald: "Oswald", "Arial", sans-serif;
 $arial: "Arial", sans-serif;
 
-@mixin list-rese {
+$white-three: #ffffff;
+$white-four: #f2f2f2;
+$leaf: #68b738;
+$black-one: #444444;
+$black-two: #222222;
+$black-three: #111111;
+$grey-border: #e6e6e6;
+
+
+@mixin list-reset {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -11,4 +20,9 @@ $arial: "Arial", sans-serif;
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+@mixin heading-reset {
+  margin: 0;
+  line-height: 1em;
 }
