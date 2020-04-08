@@ -1,0 +1,25 @@
+.more-goods {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.more-goods__main-text {
+  display: block;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: inherit;
+  text-align: center;
+  color: $black-three;
+}
+
+.more-goods__description {
+  display: block;
+
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: inherit;
+  text-align: center;
+  color: $black-one;
+}

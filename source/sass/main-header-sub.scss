@@ -1,0 +1,22 @@
+.main-header-sub {
+  padding: 22px 2px 22px 2px;
+  border-bottom: 1px solid $grey-border;
+}
+
+.main-header-sub__heading {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: inherit;
+  text-align: left;
+  color: $black-three;
+}
+
+.main-header-sub__description {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black-three;
+}

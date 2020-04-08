@@ -1,7 +1,6 @@
 .button {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
   text-align: center;
   color: $white-three;
   text-transform: uppercase;
@@ -10,5 +9,11 @@
 
   &--green {
     background-color: $leaf;
+  }
+
+  &--grey {
+    color: $black-one;
+
+    background-color: $white-four;
   }
 }

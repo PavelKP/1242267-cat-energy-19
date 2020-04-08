@@ -1,0 +1,29 @@
+.products {
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  padding: 25px 0;
+}
+
+.products__heading {
+  font-weight: inherit;
+}
+
+.products__heading-link,
+.products__heading-link:link,
+.products__heading-link:visited {
+  font-size: 16px;
+  line-height: 20px;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.products__key,
+.products__value {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  color: $black-one;
+}

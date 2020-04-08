@@ -6,13 +6,22 @@
 @import "visually-hidden.scss";
 @import "service.scss";
 
-/*  blocks */
+/*  common blocks - top */
 @import "page-header.scss";
 @import "site-list.scss";
 @import "main.scss";
+
+/*  index blocks */
 @import "main-header.scss";
 @import "program.scss";
 @import "info.scss";
 @import "bullit-list";
+
+/*  products blocks */
+@import "main-header-sub.scss";
+@import "products.scss";
+@import "more-goods";
+
+/*  common blocks - bottom */
 @import "page-footer.scss";
 @import "button.scss";

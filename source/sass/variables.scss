@@ -10,3 +10,15 @@ $black-three: #111111;
 $grey-border: #e6e6e6;
 $menu-hover: rgba(17, 17, 17, 0.6);
 $menu-active: rgba(17, 17, 17, 0.3);
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

@@ -7,31 +7,37 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип Cat Energy">
-      </a>
-      <button class="page-header__open-button">
-        <span class="page-header__button-text">Развернуть меню</span>
-      </button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header container-wide">
+      <div class="container">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип Cat Energy">
+        </a>
+        <button class="page-header__open-button">
+          <span class="page-header__button-text">Развернуть меню</span>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
-      <h1 class="main__heading main__heading--balck">Подбор программы</h1>
-      <p class="main__description main__description--black">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <header class="main-header-sub container-wide">
+        <div class="container">
+          <h1 class="main-header-sub__heading">Подбор программы</h1>
+          <p class="main-header-sub__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
+      </header>
 
       <form class="program main-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="main-form__cat-field">
@@ -106,35 +112,37 @@
         <div class="address__map"></div>
       </div>
 
-      <footer class="page-footer">
-        <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://www.vk.com" >
-              <span class="visually-hidden">Вконтакте</span>
-              <img class="social__image" src="img/vk-icon.svg" width="30" height="16" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--inst" href="https://www.instagram.com" >
-              <span class="visually-hidden">Instagram</span>
-              <img class="social__image" src="img/instagram-icon.svg" width="23" height="23" alt="Instagram">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com" >
-              <span class="visually-hidden">Facebook</span>
-              <img class="social__image" src="img/fb-icon.svg" width="14" height="28" alt="Facebook">
-            </a>
-          </li>
-        </ul>
-
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <footer class="page-footer container-wide">
+        <div class="page-footer__logo-wrapper container">
+          <a class="page-footer__logo-link" href="index.html">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
         </div>
+
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="https://www.vk.com">
+                <span class="visually-hidden">Вконтакте</span>
+                <img class="social__image" src="img/vk-icon.svg" width="30" height="16" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--inst" href="https://www.instagram.com">
+                <span class="visually-hidden">Instagram</span>
+                <img class="social__image" src="img/instagram-icon.svg" width="23" height="23" alt="Instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="https://www.facebook.com">
+                <span class="visually-hidden">Facebook</span>
+                <img class="social__image" src="img/fb-icon.svg" width="14" height="28" alt="Facebook">
+              </a>
+            </li>
+          </ul>
+
+          <div class="page-footer__copyright container">
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
       </footer>
 
     </main>
