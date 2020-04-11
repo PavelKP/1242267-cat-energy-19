@@ -1,11 +1,7 @@
-.site-list {
-  @include list-reset;
-}
-
 .site-list__item {
   min-height: 66px;
   padding: 20px;
-  border-bottom: 1px solid $grey-border;
+  border-bottom: $grey-border;
 
   font-size: 20px;
   line-height: 20px;

@@ -1,18 +1,18 @@
 .page-footer {
-  background-color: $white-four;
+  background-color: $grey-light;
 }
 
 .page-footer__logo-wrapper {
   padding-top: 39px;
   padding-bottom: 31px;
-  border-bottom: 1px solid $grey-border;
+  border-bottom: $grey-border;
 }
 
 .page-footer__copyright-link {
   font-family: $arial;
   font-size: 16px;
   line-height: 16px;
-  color: $black-one;
+  color: $grey;
 }
 
 .page-footer__copyright {

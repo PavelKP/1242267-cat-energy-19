@@ -8,7 +8,7 @@
 }
 
 .products__heading {
-  font-weight: inherit;
+  font-weight: 400;
 }
 
 .products__heading-link,
@@ -16,7 +16,7 @@
 .products__heading-link:visited {
   font-size: 16px;
   line-height: 20px;
-  color: $black-three;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -25,5 +25,5 @@
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;
-  color: $black-one;
+  color: $grey;
 }

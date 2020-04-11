@@ -2,18 +2,16 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: $white-three;
+  color: $white;
   text-transform: uppercase;
-
-  @include button-reset;
 
   &--green {
     background-color: $leaf;
   }
 
   &--grey {
-    color: $black-one;
+    color: $grey;
 
-    background-color: $white-four;
+    background-color: $grey-light;
   }
 }

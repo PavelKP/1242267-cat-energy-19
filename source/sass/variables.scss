@@ -1,24 +1,12 @@
 $oswald: "Oswald", "Arial", sans-serif;
 $arial: "Arial", sans-serif;
 
-$white-three: #ffffff;
-$white-four: #f2f2f2;
 $leaf: #68b738;
-$black-one: #444444;
-$black-two: #222222;
-$black-three: #111111;
-$grey-border: #e6e6e6;
+$white: #ffffff;
+$black: #111111;
+$black-light: #222222;
+$grey: #444444;
+$grey-light: #f2f2f2;
+$grey-border: 1px solid #e6e6e6;
 $menu-hover: rgba(17, 17, 17, 0.6);
 $menu-active: rgba(17, 17, 17, 0.3);
-
-@mixin list-reset {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@mixin button-reset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}

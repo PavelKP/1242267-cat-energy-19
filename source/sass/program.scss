@@ -4,7 +4,7 @@
 }
 
 .program__wrapper {
-  background-color: $white-four;
+  background-color: $grey-light;
   padding: 22px 21px;
 }
 
@@ -14,7 +14,7 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: inherit;
-  color: $black-three;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -22,12 +22,12 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 18px;
-  color: $black-one;
+  color: $grey;
 }
 
 .program__link {
   font-size: 16px;
   line-height: 16px;
-  color: $black-three;
+  color: $black;
   text-transform: uppercase;
 }

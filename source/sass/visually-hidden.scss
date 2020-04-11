@@ -1,7 +1,4 @@
-.visually-hidden,
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden,
-button[type="button"].visually-hidden {
+.visually-hidden {
   position: absolute;
 
   width: 1px;

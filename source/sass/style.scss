@@ -1,10 +1,9 @@
-
-@import "normalize.scss";
-@import "fonts.scss";
 @import "variables.scss";
+@import "fonts.scss";
+@import "normalize.scss";
 @import "global.scss";
-@import "visually-hidden.scss";
 @import "service.scss";
+@import "visually-hidden.scss";
 
 /*  common blocks - top */
 @import "page-header.scss";
@@ -15,12 +14,12 @@
 @import "main-header.scss";
 @import "program.scss";
 @import "info.scss";
-@import "bullit-list";
+@import "bullet-list.scss";
 
 /*  products blocks */
 @import "main-header-sub.scss";
 @import "products.scss";
-@import "more-goods";
+@import "more-goods.scss";
 
 /*  common blocks - bottom */
 @import "page-footer.scss";
