@@ -4,7 +4,9 @@
 }
 
 .products__item {
-  padding: 25px 0;
+  min-height: 210px;
+  padding-bottom: 25px;
+  border-bottom: $grey-border;
 }
 
 .products__heading {

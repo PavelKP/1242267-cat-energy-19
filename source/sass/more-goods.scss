@@ -1,6 +1,12 @@
+
 .more-goods {
+  border-bottom: $grey-border;
+}
+
+.more-goods__wrapper {
   padding-top: 27px;
   padding-bottom: 25px;
+  border-bottom: $grey-border;
 }
 
 .more-goods__main-text {

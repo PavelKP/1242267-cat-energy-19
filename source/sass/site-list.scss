@@ -10,16 +10,32 @@
   text-transform: uppercase;
 }
 
-.site-list__link,
-.site-list__link:link,
-.site-list__link:visited {
-  color: inherit;
-}
+.site-list__link {
+  position: relative;
 
-.site-list__link:hover:not(.site-list__link--active) {
-  color: $menu-hover;
-}
+  color: $black;
+  vertical-align: middle;
 
-.site-list__link:active:not(.site-list__link--active) {
-  color: $menu-active;
+  &[href]:hover {
+    color: $menu-hover;
+  }
+
+  &[href]:active {
+    color: $menu-active;
+  }
+
+  &:not([href]) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+
+      display: block;
+      height: 2px;
+      margin-top: 9px;
+
+      background-color: $leaf;
+    }
+  }
 }
