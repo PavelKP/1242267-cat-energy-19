@@ -9,6 +9,7 @@
     display: block;
     flex-grow: 1;
     height: 3px;
+    margin-top: 7px;
 
     background-color: $leaf;
   }
@@ -28,4 +29,24 @@
 .extra-goods__item {
   padding: 14px 0 17px 0;
   border-bottom: $grey-border;
+}
+
+.extra-goods__product-name {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-light;
+}
+
+.extra-goods__product-properties {
+  margin: 0;
+}
+
+.extra-goods__property {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey;
 }
