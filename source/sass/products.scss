@@ -1,8 +1,3 @@
-.products {
-  padding: 0;
-  list-style: none;
-}
-
 .products__item {
   min-height: 210px;
   padding-bottom: 25px;
@@ -17,7 +12,6 @@
 .products__heading-link:link,
 .products__heading-link:visited {
   font-size: 16px;
-  line-height: 20px;
   color: $black;
   text-transform: uppercase;
 }

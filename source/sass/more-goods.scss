@@ -6,17 +6,12 @@
 .more-goods__wrapper {
   padding-top: 27px;
   padding-bottom: 25px;
-  border-bottom: $grey-border;
 }
 
 .more-goods__main-text {
-  display: block;
-
   font-size: 16px;
-  line-height: 20px;
   font-weight: 400;
   text-align: center;
-  color: $black;
 }
 
 .more-goods__description {
@@ -25,7 +20,6 @@
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
   text-align: center;
   color: $grey;
 }
