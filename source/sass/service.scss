@@ -1,11 +1,7 @@
-.container {
-  width: 280px;
-  margin: 0 auto;
-}
-
-.container-wide {
-  width: 320px;
-  margin: 0 auto;
+.fieldset-reset {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 .list-reset {
@@ -18,4 +14,14 @@
   padding: 0;
   border: 0;
   cursor: pointer;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  width: 320px;
+  margin: 0 auto;
 }

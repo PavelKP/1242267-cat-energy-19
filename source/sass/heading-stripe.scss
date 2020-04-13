@@ -1,0 +1,14 @@
+.heading-stripe {
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+    height: 3px;
+    margin-top: 7px;
+
+    background-color: $leaf;
+  }
+}

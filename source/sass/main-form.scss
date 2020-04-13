@@ -1,0 +1,103 @@
+.main-form {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.main-form button {
+  margin-bottom: 23px;
+}
+
+.main-form__label {
+  display: flex;
+
+  color: $black-light;
+}
+
+.main-form input::placeholder,
+.main-form input {
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.main-form__input[type="text"],
+.main-form__input[type="number"] {
+  flex-grow: 1;
+  height: 45px;
+  padding: 0 16px;
+}
+
+/* cat field */
+.main-form__cat-field {
+  padding-bottom: 22px;
+  border-bottom: $grey-border;
+}
+
+.main-form__cat-field .main-form__label-text {
+  display: block;
+  flex-shrink: 0;
+  max-width: 100px;
+
+  &--name {
+    margin-right: 15px;
+  }
+
+  &--weight {
+    margin-right: 18px;
+  }
+
+  &--age {
+    margin-right: 16px;
+  }
+}
+
+.main-form__cat-field .main-form__label {
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+/* program field */
+.main-form__program-field {
+  padding: 21px 0 22px 0;
+  border-bottom: $grey-border;
+}
+
+.main-form__legend-wrapper {
+  padding: 31px 0 31px 20px;
+}
+
+.main-form__legend {
+  max-width: 182px;
+  margin-right: 22px;
+
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: none;
+}
+
+.main-form__program-field .main-form__label {
+  display: flex;
+}
+
+.main-form__label-radio {
+  display: block;
+}
+
+.main-form__add-field {
+  padding-bottom: 34px;
+}
+
+.main-form__text {
+  margin: 0;
+  margin-bottom: 34px;
+
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $grey;
+  text-transform: none;
+}
