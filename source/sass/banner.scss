@@ -4,18 +4,20 @@
 }
 
 .banner__wrapper {
+  min-height: 289px;
   padding: 65px 60px 20px 60px;
 
   text-align: center;
 
   background-color: $leaf;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  @include bg-image("../img/gift-photo-mobile@1x.jpg");
 }
 
 .banner__image {
   margin-bottom: 64px;
 
-  fill: #ffffff;
+  fill: $white;
 }
 
 .banner__text {

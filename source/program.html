@@ -46,15 +46,15 @@
           <legend class="main-form__legend visually-hidden">Параметры кота</legend>
           <div class="container">
             <label class="main-form__label">
-              <span class="main-form__label-text main-form__label-text--name">Имя:*</span>
+              <span class="main-form__label-text">Имя:*</span>
               <input class="main-form__input main-form__input" type="text" name="name" placeholder="барсик" size="15" required>
             </label>
             <label class="main-form__label">
-              <span class="main-form__label-text main-form__label-text--weight">Вес (кг):*</span>
+              <span class="main-form__label-text">Вес (кг):*</span>
               <input class="main-form__input main-form__input" type="number" inputmode="numeric" name="weight" placeholder="7" min="1" max="100" required>
             </label>
             <label class="main-form__label">
-              <span class="main-form__label-text main-form__label-text--age">Возраст (лет):</span>
+              <span class="main-form__label-text">Возраст (лет):</span>
               <input class="main-form__input main-form__input" type="number" inputmode="numeric" name="age" min="1" max="100" placeholder="7">
             </label>
           </div>
@@ -78,10 +78,10 @@
           </div>
         </fieldset>
         <fieldset class="main-form__contacts-field container-wide fieldset-reset">
-          <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
-          <div class="main-form__legend-wrapper heading-stripe">
-            <span class="main-form__legend" aria-hidden="true">Контактные данные (владельца кота)</span>
-          </div>
+          <legend class="main-form__legend heading-stripe">
+            Контактные данные<br>
+            (владельца кота)
+          </legend>
           <div class="container">
             <label class="main-form__label">
               E-mail:*
@@ -94,20 +94,14 @@
           </div>
         </fieldset>
         <fieldset class="main-form__comment-field container-wide fieldset-reset">
-          <legend class="main-form__legend visually-hidden">Комментарий</legend>
-          <div class="main-form__legend-wrapper heading-stripe">
-            <span class="main-form__legend" aria-hidden="true">Комментарий</span>
-          </div>
+          <legend class="main-form__legend heading-stripe">Комментарий</legend>
           <div class="container">
             <label class="visually-hidden" for="comment-id">Поле для указания комментария</label>
             <textarea class="main-form__textarea" id="comment-id" name="comment">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
         <fieldset class="main-form__add-field container-wide fieldset-reset">
-          <legend class="main-form__legend visually-hidden">Дополнительно</legend>
-          <div class="main-form__legend-wrapper heading-stripe">
-            <span class="main-form__legend" aria-hidden="true">Дополнительно</span>
-          </div>
+          <legend class="main-form__legend heading-stripe">Дополнительно</legend>
           <div class="container">
             <label class="main-form__label">
               <input class="main-form__input" type="checkbox" name="sweetener" checked>
@@ -136,44 +130,44 @@
       <div class="address address--grey container-wide">
         <div class="address__wrapper container">
           <p class="address__text">приглашаем к сотрудничеству дилеров!</p>
-          <address class="address__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="address__map"></div>
       </div>
-
-      <footer class="page-footer container-wide">
-        <div class="page-footer__logo-wrapper container">
-          <a class="page-footer__logo-link" href="index.html">
-            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-          </a>
-        </div>
-
-        <ul class="page-footer__social social list-reset">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://www.vk.com">
-              <span class="visually-hidden">Вконтакте</span>
-              <img class="social__image" src="../img/icon-vk.svg" width="30" height="16" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--inst" href="https://www.instagram.com">
-              <span class="visually-hidden">Instagram</span>
-              <img class="social__image" src="../img/icon-instagram.svg" width="23" height="23" alt="Instagram">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com">
-              <span class="visually-hidden">Facebook</span>
-              <img class="social__image" src="../img/icon-fb.svg" width="14" height="28" alt="Facebook">
-            </a>
-          </li>
-        </ul>
-
-        <div class="page-footer__copyright container">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </footer>
-
     </main>
+
+    <footer class="page-footer container-wide">
+      <div class="page-footer__logo-wrapper container">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+      </div>
+
+      <ul class="page-footer__social social list-reset">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://www.vk.com">
+            <span class="visually-hidden">Вконтакте</span>
+            <img class="social__image" src="img/icon-vk.svg" width="30" height="16" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="https://www.instagram.com">
+            <span class="visually-hidden">Instagram</span>
+            <img class="social__image" src="img/icon-instagram.svg" width="23" height="23" alt="Instagram">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="https://www.facebook.com">
+            <span class="visually-hidden">Facebook</span>
+            <img class="social__image" src="img/icon-fb.svg" width="14" height="28" alt="Facebook">
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__copyright container">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+
   </body>
 </html>

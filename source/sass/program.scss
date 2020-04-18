@@ -6,6 +6,10 @@
 .program__wrapper {
   background-color: $grey-light;
   padding: 22px 21px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .program__heading {
