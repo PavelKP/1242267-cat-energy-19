@@ -21,7 +21,7 @@
   text-transform: uppercase;
 }
 
-.address__address {
+.address__location {
   width: 49%;
 
   font-family: $arial;
@@ -34,6 +34,5 @@
 .address__map {
   min-height: 362px;
 
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: 0 -38px;
+  @include bg-image("../img/bg-map-mobile@1x.png", 0, -38px);
 }
