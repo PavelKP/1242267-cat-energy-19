@@ -11,7 +11,7 @@
 
   background-color: $leaf;
 
-  @include bg-image("../img/gift-photo-mobile@1x.jpg");
+  @include bg-image("gift-photo-mobile@1x.jpg");
 }
 
 .banner__image {

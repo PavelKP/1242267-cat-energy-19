@@ -34,5 +34,5 @@
 .address__map {
   min-height: 362px;
 
-  @include bg-image("../img/bg-map-mobile@1x.png", 0, -38px);
+  @include bg-image("bg-map-mobile@1x.png", 0, -38px);
 }
