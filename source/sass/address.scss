@@ -13,7 +13,7 @@
 }
 
 .address__text {
-  width: 44%;
+  max-width: 154px;
   margin: 0;
 
   font-size: 16px;
@@ -22,7 +22,7 @@
 }
 
 .address__location {
-  width: 49%;
+  max-width: 154px;
 
   font-family: $arial;
   font-size: 14px;
@@ -34,5 +34,11 @@
 .address__map {
   min-height: 362px;
 
-  @include bg-image("bg-map-mobile@1x.png", 0, -38px);
+  @include bg-image("bg-map-mobile@1x.png", center, -38px);
+}
+
+@media (min-width: $tablet-width) {
+  .address__map {
+    @include bg-image("bg-map-tablet@1x.png");
+  }
 }

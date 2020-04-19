@@ -3,3 +3,26 @@
   line-height: 18px;
   color: $grey;
 }
+
+@media (min-width: $tablet-width) {
+  .bullet-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bullet-list__item {
+    width: 197px;
+    min-height: 230px;
+
+    &:nth-child(odd) {
+      margin-right: 183px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .bullet-list__item:not(:last-child) {
+    margin-right: 124px;
+  }
+}
+

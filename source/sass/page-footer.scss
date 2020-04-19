@@ -18,3 +18,11 @@
 .page-footer__copyright {
   padding: 22px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

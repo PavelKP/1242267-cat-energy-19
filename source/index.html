@@ -8,16 +8,16 @@
   <body>
 
     <header class="page-header container-wide">
-      <div class="page-header__wrapper container">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="191" height="39"
-            alt="Логотип Cat Energy">
-        </a>
-        <button class="page-header__open-button button-reset">
-          <span class="page-header__button-text">Развернуть меню</span>
-        </button>
-      </div>
-      <div class="container">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-panel container">
+          <a class="page-header__logo-link">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+              alt="Логотип Cat Energy">
+          </a>
+          <button class="page-header__open-button button-reset">
+            <span class="page-header__button-text">Развернуть меню</span>
+          </button>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list list-reset">
             <li class="site-list__item">
@@ -112,11 +112,12 @@
     </main>
 
     <footer class="page-footer container-wide">
-      <div class="page-footer__logo-wrapper container">
-        <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-        </a>
-      </div>
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__logo-wrapper">
+          <a class="page-footer__logo-link" href="index.html">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+          </a>
+        </div>
 
         <ul class="page-footer__social social list-reset">
           <li class="social__item">
@@ -139,9 +140,10 @@
           </li>
         </ul>
 
-        <div class="page-footer__copyright container">
+        <div class="page-footer__copyright">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
+      </div>
     </footer>
 
   </body>

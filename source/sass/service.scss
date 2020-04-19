@@ -17,11 +17,33 @@
 }
 
 .container {
-  width: 280px;
+  width: calc(100% - 40px);
   margin: 0 auto;
 }
 
 .container-wide {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container-wide {
+    width: 768px;
+  }
+
+  .container {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-wide {
+    width: 1440px;
+  }
+
+  .container {
+    width: calc(100% - 220px);
+    margin: 0 auto;
+  }
 }

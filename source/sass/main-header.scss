@@ -5,9 +5,11 @@
   text-align: center;
 
   background-image:  url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient($leaf 305px, $white 305px);
-  background-size: contain;
+    linear-gradient(90deg, #65a93c, #63a73a),
+    linear-gradient(#65a93c 305px, $white 305px);
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto, 100% 305px, auto;
 }
 
 .main-header__heading {

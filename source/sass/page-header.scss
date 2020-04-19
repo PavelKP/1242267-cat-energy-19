@@ -1,3 +1,24 @@
-.page-header__wrapper {
-  border-bottom: $grey-border;
+.page-header__logo-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+
+  .page-header__open-button {
+    display: none;
+  }
+
+  .page-header__logo-panel {
+    margin: 0;
+    width: auto;
+  }
 }
