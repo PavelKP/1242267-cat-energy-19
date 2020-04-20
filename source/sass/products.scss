@@ -23,3 +23,14 @@
   line-height: 16px;
   color: $grey;
 }
+
+@media (min-width: $tablet-width) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .products__item {
+    width: 324px;
+  }
+}

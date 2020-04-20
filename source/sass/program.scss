@@ -33,3 +33,13 @@
   color: $black;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .program {
+    display: flex;
+  }
+
+  .program__wrapper {
+    min-height: 372px;
+  }
+}
