@@ -1,0 +1,11 @@
+@media (min-width: $desktop-width) {
+  .goods {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .goods__list {
+    width: calc(100% - 220px);
+    margin: 0 auto;
+  }
+}
