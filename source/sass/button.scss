@@ -14,6 +14,14 @@
 
   &--green {
     background-color: $leaf;
+
+    &:hover {
+      background-color: $grass;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 
   &--grey {
