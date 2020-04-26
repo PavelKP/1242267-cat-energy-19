@@ -7,8 +7,9 @@ let openMenuButton = document.querySelector('.page-header__open-button');
 let pageHeader = document.querySelector('.page-header__logo-panel');
 
 mainNav.style.height = "0px";
-pageHeader.classList.remove("page-header__logo-panel--opened");
 pageHeader.classList.add("page-header__logo-panel--closed");
+openMenuButton.style.display = "block";
+openMenuButton.setAttribute("aria-label", "Развернуть меню");
 
 openMenuButton.addEventListener('click', function(evt) {
   let mainNavItemAmount = document.querySelectorAll('.site-list__item').length;
@@ -16,10 +17,12 @@ openMenuButton.addEventListener('click', function(evt) {
     mainNav.style.height = (mainNavItemAmount * 65) + 1  + "px";
     pageHeader.classList.remove("page-header__logo-panel--closed");
     pageHeader.classList.add("page-header__logo-panel--opened");
+    openMenuButton.setAttribute("aria-label", "Свернуть меню");
   } else {
     mainNav.style.height = "0px";
     pageHeader.classList.remove("page-header__logo-panel--opened");
     pageHeader.classList.add("page-header__logo-panel--closed");
+    openMenuButton.setAttribute("aria-label", "Развернуть меню");
   }
 })
 
