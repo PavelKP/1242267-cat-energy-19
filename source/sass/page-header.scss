@@ -5,6 +5,56 @@
   min-height: 65px;
 }
 
+.page-header__open-button {
+  position: relative;
+  width: 24px;
+  height: 19px;
+
+  background-color: transparent;
+}
+
+.page-header__logo-panel--closed {
+  .page-header__open-button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+
+    background-color: $black-light;
+    box-shadow: 0 8px $black-light, 0 16px $black-light;
+  }
+}
+
+.page-header__logo-panel--opened {
+  .page-header__open-button::before,
+  .page-header__open-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+
+    background-color: $black-light;
+  }
+
+  .page-header__open-button::before {
+    top: 8px;
+    left: 0;
+
+    transform: rotate(45deg);
+  }
+
+  .page-header__open-button::after {
+    bottom: 8px;
+    left: 0;
+
+    transform: rotate(-45deg);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     display: flex;
