@@ -4,6 +4,41 @@
   color: $grey;
 }
 
+.bullet-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $leaf;
+    background-repeat: repeat;
+    background-position: center center;
+  }
+}
+
+.bullet-list__item--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.bullet-list__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.bullet-list__item--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.bullet-list__item--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
 @media (min-width: $tablet-width) {
   .bullet-list {
     display: flex;

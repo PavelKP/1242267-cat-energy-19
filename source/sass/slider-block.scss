@@ -20,6 +20,23 @@
   color: $grey;
 }
 
+.slider-block__stats {
+  display: flex;
+  max-width: 280px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.slider-block__stats-wrapper {
+  position: relative;
+  width: 124px;
+  padding: 17px 0 18px 0;
+  border: 1px solid $grey-dirty;
+
+  text-align: center;
+}
+
 .slider-block__key {
   font-size: 24px;
   line-height: 28px;
@@ -27,25 +44,102 @@
 }
 
 .slider-block__value {
+  position: absolute;
+  left: 18px;
+  top: 50px;
+  width: 87px;
+  padding: 5px 15px;
+  margin-left: 0;
+
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
   color: $grey;
+
+  background-color: $grey-light;
 }
 
 .slider-block__conclusion {
+  margin-bottom: 44px;
+
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.slider-block__before,
-.slider-block__after {
+.slider-block__button-before,
+.slider-block__button-after {
+  margin: 0 18px;
+
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
 
   background-color: transparent;
+}
+
+.slider-block__handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    display: block;
+    width: 35px;
+    height: 6px;
+
+    background-color: $leaf;
+  }
+}
+
+.slider-block__scale {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $grey-dirty;
+  border-radius: 6px;
+
+  background-color: $white;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 35px;
+    height: 6px;
+    margin: 0 6px;
+    border-radius: 3px;
+
+    background-color: $leaf;
+    transition: transform 150ms ease;
+  }
+}
+
+.slider-block__scale.js-is-right::after {
+  transform: translateX(36px);
+}
+
+.slider-block__image-box {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-block__image {
+  display: block;
+
+  &--after {
+    display: none;
+  }
+}
+
+.slider-block__image-box.js-is-after .slider-block__image--after {
+  display: block;
+}
+
+.slider-block__image-box.js-is-after .slider-block__image--before {
+  display: none;
 }

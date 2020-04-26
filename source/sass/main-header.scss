@@ -13,7 +13,8 @@
 }
 
 .main-header__heading {
-  margin: 0;
+  max-width: 335px;
+  margin: 0 auto;
   margin-bottom: 19px;
 
   font-size: 36px;
@@ -34,7 +35,7 @@
     min-height: 806px;
     padding: 0;
 
-    background: none;
+    background-image: none;
     color: $black;
   }
 

@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .container-wide {
-    width: 768px;
+    width: 100%;
   }
 
   .container {
@@ -39,11 +39,12 @@
 
 @media (min-width: $desktop-width) {
   .container-wide {
-    width: 1440px;
+    width: $desktop-width - 40px;
+    /* to prevent horizontal scroll */
   }
 
   .container {
-    width: calc(100% - 220px);
+    width: calc(100% - 40px);
     margin: 0 auto;
   }
 }
