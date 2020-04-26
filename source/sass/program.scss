@@ -52,10 +52,56 @@
 }
 
 .program__link {
+  /*
+  display: flex;
+  align-items: center;
+  */
   font-size: 16px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
+}
+/*
+  &::after {
+    content: url("../img/icon-right-arrow-long.svg");
+    display: block;
+    width: 25px;
+    height: 12px;
+    margin-left: 13px;
+  }
+}
+
+.program__link:hover::after {
+  content: url("../img/icon-right-arrow-verylong.svg");
+  width: 34px;
+}
+
+.program__link:active {
+  opacity: 0.3;
+}
+*/
+
+.program__img {
+  margin-left: 13px;
+  fill: #3f4242;
+}
+
+.program__img--hover {
+  display: none;
+}
+
+.program__link:hover {
+  .program__img {
+    display: none;
+  }
+
+  .program__img--hover {
+    display: inline;
+  }
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {
