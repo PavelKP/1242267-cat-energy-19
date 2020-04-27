@@ -69,32 +69,35 @@
           <div class="container">
             <label class="main-form__label">
               <span class="main-form__label-text">Имя:*</span>
-              <input class="main-form__input main-form__input" type="text" name="name" placeholder="барсик" size="15" required>
+              <input class="main-form__input" type="text" name="name" placeholder="барсик" size="15" required>
             </label>
             <label class="main-form__label">
               <span class="main-form__label-text">Вес (кг):*</span>
-              <input class="main-form__input main-form__input" type="number" inputmode="numeric" name="weight" placeholder="7" min="1" max="100" required>
+              <input class="main-form__input" type="number" inputmode="numeric" name="weight" placeholder="7" min="1" max="100" required>
             </label>
             <label class="main-form__label">
               <span class="main-form__label-text">Возраст (лет):</span>
-              <input class="main-form__input main-form__input" type="number" inputmode="numeric" name="age" min="1" max="100" placeholder="7">
+              <input class="main-form__input" type="number" inputmode="numeric" name="age" min="1" max="100" placeholder="7">
             </label>
           </div>
         </fieldset>
 
         <fieldset class="main-form__program-field container-wide fieldset-reset">
-        <legend class="main-form__legend container visually-hidden">Желаемая программа</legend>
+          <legend class="main-form__legend container visually-hidden">Желаемая программа</legend>
           <div class="container">
             <label class="main-form__label">
-              <input class="main-form__input" type="radio" name="program-type" value="loss" checked>
-              <span class="main-form__label-radio">Похудение</span>
+              <input class="main-form__input visually-hidden" type="radio" name="program-type" value="loss" checked>
+              <span class="main-form__custom-box main-form__custom-box--radio"></span>
+              Похудение
             </label>
             <label class="main-form__label">
-              <input class="main-form__input" type="radio" name="program-type" value="gain">
+              <input class="main-form__input visually-hidden" type="radio" name="program-type" value="gain">
+              <span class="main-form__custom-box main-form__custom-box--radio"></span>
               Набор массы
             </label>
             <label class="main-form__label">
-              <input class="main-form__input" type="radio" name="program-type" value="unknown">
+              <input class="main-form__input visually-hidden" type="radio" name="program-type" value="unknown">
+              <span class="main-form__custom-box main-form__custom-box--radio"></span>
               Не знаю (Нужен ваш совет)
             </label>
           </div>
@@ -106,18 +109,18 @@
           </legend>
           <div class="container">
             <label class="main-form__label">
-              E-mail:*
+              <span class="main-form__label-text">E-mail:*</span>
               <input class="main-form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
             </label>
             <label class="main-form__label">
-              Телефон:*
+              <span class="main-form__label-text">Телефон:*</span>
               <input class="main-form__input" type="text" name="tel" placeholder="8 (960) 900-60-90">
             </label>
           </div>
         </fieldset>
         <fieldset class="main-form__comment-field container-wide fieldset-reset">
           <legend class="main-form__legend heading-stripe">Комментарий</legend>
-          <div class="container">
+          <div class="main-form__textarea-container container">
             <label class="visually-hidden" for="comment-id">Поле для указания комментария</label>
             <textarea class="main-form__textarea" id="comment-id" name="comment">Расскажите обо всех повадках кота</textarea>
           </div>
@@ -126,19 +129,23 @@
           <legend class="main-form__legend heading-stripe">Дополнительно</legend>
           <div class="container">
             <label class="main-form__label">
-              <input class="main-form__input" type="checkbox" name="sweetener" checked>
+              <input class="main-form__input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="main-form__custom-box"></span>
               Сахарозаменитель
             </label>
             <label class="main-form__label">
-              <input class="main-form__input" type="checkbox" name="water">
+              <input class="main-form__input visually-hidden" type="checkbox" name="water">
+              <span class="main-form__custom-box"></span>
               Питьевая вода
             </label>
             <label class="main-form__label">
-              <input class="main-form__input" type="checkbox" name="milk">
+              <input class="main-form__input visually-hidden" type="checkbox" name="milk">
+              <span class="main-form__custom-box"></span>
               Молоко
             </label>
             <label class="main-form__label">
-              <input class="main-form__input" type="checkbox" name="vitamins">
+              <input class="main-form__input visually-hidden" type="checkbox" name="vitamins">
+              <span class="main-form__custom-box"></span>
               Витамины
             </label>
           </div>
