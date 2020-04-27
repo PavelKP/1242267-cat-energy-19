@@ -18,6 +18,7 @@
 }
 
 .extra-goods__product-name {
+  margin-top: 0;
   margin-bottom: 15px;
 
   font-size: 16px;
@@ -27,7 +28,10 @@
 }
 
 .extra-goods__product-properties {
-  margin: 0;
+  margin-bottom: 14px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .extra-goods__property {

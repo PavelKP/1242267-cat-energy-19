@@ -4,8 +4,14 @@
   border-bottom: $grey-border;
 }
 
+.products__content-block {
+  display: flex;
+  align-items: center;
+}
+
 .products__heading {
   font-weight: 400;
+  max-width: 75px;
 }
 
 .products__heading-link,
@@ -16,8 +22,19 @@
   text-transform: uppercase;
 }
 
+.products__info-list {
+  min-width: 141px;
+}
+
+.products__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .products__key,
 .products__value {
+  margin: 0;
+
   font-family: $arial;
   font-size: 12px;
   line-height: 16px;

@@ -4,18 +4,34 @@
 }
 
 .more-goods__wrapper {
-  padding-top: 27px;
-  padding-bottom: 25px;
+  position: relative;
+  padding-top: 83px;
+
+  &::before {
+    content: url("../img/icon-plus-mobile.svg");
+    position: absolute;
+    left: 50%;
+    top: 27px;
+    width: 31px;
+    height: 31px;
+    margin-left: -15.5px;
+    opacity: 0.2;
+  }
 }
 
 .more-goods__main-text {
+  margin: 0;
+  margin-bottom: 11px;
+
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .more-goods__description {
   display: block;
+  margin-bottom: 22px;
 
   font-family: $arial;
   font-size: 12px;
