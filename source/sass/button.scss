@@ -28,6 +28,14 @@
     color: $grey;
 
     background-color: $grey-light;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($grey, 0.3);
+    }
   }
 
   &--big {
