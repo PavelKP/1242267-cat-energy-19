@@ -1,6 +1,19 @@
 .main-nav {
-  transition: 0.5s ease;
   overflow: hidden;
+}
+
+.main-nav__transition {
+  transition: 0.5s ease;
+}
+
+.main-nav__minimize {
+  height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    height: 100%;
+  }
 }
 
 @media (min-width: $desktop-width) {

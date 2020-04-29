@@ -12,6 +12,10 @@
   height: 19px;
 
   background-color: transparent;
+
+  &--show {
+    display: block;
+  }
 }
 
 .page-header__logo-panel--closed {
