@@ -164,23 +164,21 @@
   }
 }
 
-.main-form__icon-mail {
+.main-form__icon {
   position: absolute;
-  top: 16px;
-  right: 15px;
+
+  &--mail {
+    top: 16px;
+    right: 15px;
+  }
+
+  &--phone {
+    top: 13px;
+    right: 12px;
+  }
 }
 
-.main-form__icon-phone {
-  position: absolute;
-  top: 13px;
-  right: 12px;
-}
-
-.main-form__input:focus + .main-form__icon-mail {
-  fill: $leaf;
-}
-
-.main-form__input:focus + .main-form__icon-phone {
+.main-form__input:focus + .main-form__icon {
   fill: $leaf;
 }
 
@@ -240,12 +238,12 @@
     border-color: #ff8282;
     box-shadow: inset 0 0 0 1px #ff8282;
 
-    & + svg {
+    & + .main-form__icon {
       fill: #ff8282;
     }
   }
 
-  & + svg {
+  & + .main-form__icon {
     fill: #ff8282;
   }
 }
