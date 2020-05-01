@@ -23,7 +23,7 @@ openMenuButton.addEventListener('click', function(evt) {
     mainNav.classList.add("main-nav__transition");
 
     mainNav.classList.remove("main-nav__minimize");
-    mainNav.style.height = (mainNavItemAmount * menuItemHeight) + 1  + "px";
+    mainNav.style.height = (mainNavItemAmount * menuItemHeight) + 1 + "px";
     pageHeader.classList.remove("page-header__logo-panel--closed");
     pageHeader.classList.add("page-header__logo-panel--opened");
     openMenuButton.setAttribute("aria-label", "Свернуть меню");

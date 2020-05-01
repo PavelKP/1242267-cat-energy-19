@@ -7,10 +7,10 @@
 .main-form__legend {
   display: flex;
   width: 100%;
-  padding: 30px 0 30px 20px;
+  padding: 28px 0 34px 20px;
 
   font-size: 24px;
-  line-height: 28px;
+  line-height: 24px;
   text-transform: none;
 }
 
@@ -26,6 +26,7 @@
   margin: 0;
   margin-bottom: 34px;
 
+  font-family: $arial;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -43,7 +44,7 @@
 .main-form__input {
   flex-grow: 1;
   height: 45px;
-  padding: 0 16px;
+  padding: 0 15px 2px 15px;
   border: 1px solid rgba($grey-dirty, 0.5);
 
   outline: none;
@@ -62,8 +63,9 @@
   }
 }
 
-.main-form__input[type="email"] {
-  padding: 0 53px 0 16px;
+.main-form__input[type="email"],
+.main-form__input[type="tel"] {
+  padding: 0 45px 3px 14px;
 }
 
 /* input - checkboxes and radio */
@@ -114,7 +116,7 @@
 }
 
 .main-form button {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 /* cat field */
@@ -126,7 +128,8 @@
     display: block;
     flex-shrink: 0;
     max-width: 100px;
-    margin-right: 16px;
+    margin-right: 15px;
+    margin-bottom: 4px;
   }
 
   .main-form__label {
@@ -140,7 +143,7 @@
 
 /* program field */
 .main-form__program-field {
-  padding: 21px 0 22px 0;
+  padding: 21px 0 7px 0;
   border-bottom: $grey-border;
 
   .main-form__label {
@@ -153,6 +156,7 @@
 .main-form__contacts-field {
   .main-form__label-text {
     margin-right: 11px;
+    margin-bottom: 5px;
   }
 
   .main-form__label:not(:last-child) {
@@ -162,11 +166,21 @@
 
 .main-form__icon-mail {
   position: absolute;
-  top: 15.5px;
-  right: 19px;
+  top: 16px;
+  right: 15px;
+}
+
+.main-form__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 12px;
 }
 
 .main-form__input:focus + .main-form__icon-mail {
+  fill: $leaf;
+}
+
+.main-form__input:focus + .main-form__icon-phone {
   fill: $leaf;
 }
 
@@ -179,7 +193,7 @@
   flex-grow: 1;
   min-width: 280px;
   min-height: 150px;
-  padding: 15px;
+  padding: 12px 12px 15px 14px;
   border: 1px solid rgba($grey-dirty, 0.5);
 
   font-size: 16px;
@@ -203,7 +217,7 @@
   padding-bottom: 34px;
 
   .main-form__label:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 }
 
@@ -226,12 +240,12 @@
     border-color: #ff8282;
     box-shadow: inset 0 0 0 1px #ff8282;
 
-    & + .main-form__icon-mail {
+    & + svg {
       fill: #ff8282;
     }
   }
 
-  & + .main-form__icon-mail {
+  & + svg {
     fill: #ff8282;
   }
 }
