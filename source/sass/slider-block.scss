@@ -1,10 +1,11 @@
 .slider-block {
   background-color: $grey-light;
-  padding: 33px 0 38px 0;
+  padding-bottom: 38px;
 }
 
 .slider-block__heading {
   margin: 0;
+  margin-bottom: 23px;
 
   font-size: 36px;
   line-height: 60px;
@@ -13,6 +14,8 @@
 
 .slider-block__text {
   padding-right: 14px;
+  margin-top: 0;
+  margin-bottom: 25px;
 
   font-family: $arial;
   font-size: 14px;
@@ -25,13 +28,13 @@
   max-width: 280px;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
 }
 
 .slider-block__stats-wrapper {
   position: relative;
   width: 124px;
-  padding: 17px 0 18px 0;
+  padding: 12px 0 14px 0;
   border: 1px solid $grey-dirty;
 
   text-align: center;
@@ -45,8 +48,8 @@
 
 .slider-block__value {
   position: absolute;
-  left: 18px;
-  top: 50px;
+  left: 17px;
+  top: 41px;
   width: 87px;
   padding: 5px 15px;
   margin-left: 0;
@@ -60,7 +63,7 @@
 }
 
 .slider-block__conclusion {
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 
   font-size: 14px;
   line-height: 20px;
@@ -84,6 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 5px;
 
   &::after {
     display: block;
@@ -126,6 +130,7 @@
 .slider-block__image-box {
   display: flex;
   justify-content: center;
+  margin-bottom: 31px;
 }
 
 .slider-block__image {

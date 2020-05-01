@@ -6,7 +6,7 @@ let mainNav = document.querySelector('.main-nav');
 let openMenuButton = document.querySelector('.page-header__open-button');
 let pageHeader = document.querySelector('.page-header__logo-panel');
 
-let menuItemHeight = 65;
+let menuItemHeight = 66;
 
 //On page loading show closed button and minimize menu
 mainNav.classList.add("main-nav__minimize");
