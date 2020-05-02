@@ -53,13 +53,27 @@ img.products__image {
 }
 
 @media (min-width: $tablet-width) {
+  .products__item {
+    width: 324px;
+    min-height: 513px;
+    padding-bottom: 25px;
+    border-bottom: $grey-border;
+  }
+
+  .products__content-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 413px;
+  }
+
+  .products__description-block {
+    width: 248px;
+  }
+
   .products {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .products__item {
-    width: 324px;
   }
 }
 

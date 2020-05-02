@@ -38,7 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    min-height: 866px;
+    min-height: 806px;
     padding: 0;
 
     background-image: none;
@@ -48,7 +48,7 @@
   .main-header__wrapper {
     position: relative;
     width: calc(100% - 60px);
-    padding: 0 200px 0 90px;
+    padding: 0 200px 0 87px;
     margin: 0 auto;
 
     text-align: left;
@@ -57,7 +57,8 @@
   .main-header__heading {
     max-width: 420px;
     margin: 0;
-    margin-bottom: 33px;
+    margin-top: -4px;
+    margin-bottom: 41px;
 
     font-size: 60px;
     line-height: 60px;

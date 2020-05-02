@@ -64,12 +64,20 @@
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: calc(100% - 60px);
     min-height: 144px;
+    padding-top: 20px;
     margin: 0 auto;
   }
-
+  /*
+  .page-header__logo-panel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 65px;
+  }
+  */
   .page-header__open-button {
     display: none;
   }

@@ -41,6 +41,7 @@
     width: 50px;
     height: 53px;
     margin-right: 20px;
+    margin-top: -2px;
   }
 
   &--gain::before {
@@ -97,12 +98,13 @@
   .program {
     display: flex;
     flex-direction: column;
+    padding-top: 4px;
   }
 
   .program__wrapper {
     position: relative;
     min-height: 372px;
-    padding: 81px 280px 62px 52px;
+    padding: 77px 280px 62px 52px;
 
     &--loss::before {
       content: "";
@@ -137,6 +139,7 @@
 
   .program__heading {
     font-size: 36px;
+    margin-bottom: 25px;
 
     &::before {
       content: none;
@@ -150,6 +153,13 @@
 
   .program__link {
     font-size: 20px;
+  }
+
+  .program__img {
+    margin-left: 21px;
+    position: relative;
+    top: -3px;
+    left: 0;
   }
 }
 
