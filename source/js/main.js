@@ -48,12 +48,14 @@ window.addEventListener('resize', function() {
 });
 
 // cat slider - mobile version
-beforeButton.addEventListener('click', function (evt) {
-  scale.classList.remove('js-is-right');
-  imageBox.classList.remove('js-is-after');
-})
-
-afterButton.addEventListener('click', function (evt) {
-    scale.classList.add('js-is-right');
-    imageBox.classList.add('js-is-after');
+if (beforeButton && afterButton) {
+  beforeButton.addEventListener('click', function (evt) {
+    scale.classList.remove('js-is-right');
+    imageBox.classList.remove('js-is-after');
   });
+
+  afterButton.addEventListener('click', function (evt) {
+      scale.classList.add('js-is-right');
+      imageBox.classList.add('js-is-after');
+    });
+}

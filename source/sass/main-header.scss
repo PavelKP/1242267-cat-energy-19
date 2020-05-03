@@ -24,7 +24,7 @@
 
 .main-header__description {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 
   line-height: 18px;
   text-transform: uppercase;
@@ -34,6 +34,10 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 3px;
+}
+
+.main-header__button {
+  margin-left: 2px;
 }
 
 @media (min-width: $tablet-width) {

@@ -39,6 +39,7 @@
     content: "";
     display: block;
     position: absolute;
+    left: 0;
     height: 3px;
     width: 100%;
 
@@ -47,7 +48,6 @@
 
   .page-header__open-button::before {
     top: 8px;
-    left: 0;
 
     transform: rotate(45deg);
   }

@@ -7,7 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 23px 22px 20px 22px;
+  padding-top: 12px;
+  padding-bottom: 20px;
   min-height: 266px;
 
   background-color: $grey-light;
@@ -20,8 +21,9 @@
 .program__heading {
   display: flex;
   align-items: center;
+  padding-right: 22px;
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
 
   font-size: 24px;
   line-height: 37px;
@@ -32,29 +34,24 @@
     content: "";
 
     display: block;
-
-    background-repeat: no-repeat;
+    width: 92px;
+    height: 70px;
   }
 
   &--loss::before {
-    background-image: url("../img/icon-cat-slim.svg");
-    width: 50px;
-    height: 53px;
-    margin-right: 20px;
-    margin-top: -2px;
+    @include bg-image ("icon-cat-slim.svg", 53%, 58%);
+    background-size: 50px 53px;
   }
 
   &--gain::before {
-    background-image: url("../img/icon-cat-pro.svg");
-    width: 67px;
-    height: 50px;
-    margin-right: 12px;
-    margin-left: -9px;
+    @include bg-image ("icon-cat-pro.svg");
+    background-size: 67px 50px;
   }
 }
 
 .program__description {
   margin: 0;
+  padding: 0 21px;
 
   font-family: $arial;
   line-height: 18px;
@@ -62,8 +59,11 @@
 }
 
 .program__link {
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
   margin-top: auto;
-  margin-left: -2px;
+  margin-left: -1px;
 
   font-size: 16px;
   line-height: 20px;
@@ -72,7 +72,7 @@
 }
 
 .program__img {
-  margin-left: 7px;
+  margin-left: 11px;
   fill: #3f4242;
 }
 
@@ -98,18 +98,18 @@
   .program {
     display: flex;
     flex-direction: column;
-    padding-top: 4px;
+    padding-top: 20px;
   }
 
   .program__wrapper {
     position: relative;
-    min-height: 372px;
-    padding: 77px 280px 62px 52px;
+    min-height: 371px;
+    padding: 76px 280px 20px 53px;
 
     &--loss::before {
       content: "";
       position: absolute;
-      top: 80px;
+      top: 79px;
       right: 62px;
       width: 200px;
       height: 212px;
@@ -147,19 +147,20 @@
   }
 
   .program__description {
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
   }
 
   .program__link {
+    margin-top: 56px;
+    padding: 0;
+
     font-size: 20px;
   }
 
   .program__img {
-    margin-left: 21px;
-    position: relative;
-    top: -3px;
-    left: 0;
+    margin-left: 23px;
   }
 }
 
