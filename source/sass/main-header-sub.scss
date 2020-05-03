@@ -23,3 +23,16 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header-sub {
+    &--border {
+      border-bottom: none;
+    }
+  }
+
+  .main-header-sub__heading {
+    font-size: 60px;
+    padding-bottom: 70px;
+  }
+}

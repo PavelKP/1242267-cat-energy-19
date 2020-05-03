@@ -1,4 +1,3 @@
-
 .more-goods {
   border-bottom: $grey-border;
 }
@@ -38,4 +37,46 @@
   line-height: 16px;
   text-align: center;
   color: $grey;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods {
+    border: 1px solid $grey-dirty;
+  }
+
+  .more-goods__wrapper {
+    padding-top: 164px;
+    background-color: $white;
+
+    &::before {
+      content: url("../img/icon-plus.svg");
+      top: 54px;
+      width: 61px;
+      height: 61px;
+      margin-left: -30.5px;
+    }
+  }
+
+  .more-goods__main-text {
+    max-width: 135px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .more-goods__description {
+    max-width: 225px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .more-goods__button {
+    max-width: 249px;
+    margin: 0 auto;
+  }
 }
