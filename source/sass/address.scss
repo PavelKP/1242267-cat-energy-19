@@ -38,7 +38,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .address__wrapper {
+    padding: 65px 41px 56px 41px;
+    min-height: 201px;
+  }
+
+  .address__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .address__location {
+    max-width: 175px;
+
+    text-align: right;
+    font-size: 16px;
+  }
+
+  .address__city {
+    display: block;
+    margin-top: 19px;
+  }
+
   .address__map {
-    @include bg-image("bg-map-tablet@1x.png");
+    min-height: 396px;
+
+    @include bg-image("bg-map-tablet@1x.png", center, -4px);
   }
 }

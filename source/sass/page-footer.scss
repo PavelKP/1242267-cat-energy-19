@@ -65,5 +65,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 150px;
+  }
+
+  .page-footer__logo-wrapper {
+    border-bottom: none;
+    padding-top: 37px;
+  }
+
+  .page-footer__logo-link svg {
+    margin-left: 23px;
+  }
+
+  .page-footer__social {
+    border-bottom: none;
+    padding-left: 28px;
   }
 }

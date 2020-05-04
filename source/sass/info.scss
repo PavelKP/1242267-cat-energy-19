@@ -15,3 +15,19 @@
   line-height: 60px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .info {
+    padding-bottom: 27px;
+    border-bottom: $grey-border;
+  }
+
+  .info__heading {
+    font-size: 60px;
+    margin-bottom: 72px;
+  }
+
+  .info__wrapper {
+    padding-top: 29px;
+  }
+}
