@@ -1,7 +1,7 @@
 let beforeButton = document.querySelector('.slider-block__button-before');
 let afterButton = document.querySelector('.slider-block__button-after');
 let scale = document.querySelector('.slider-block__scale');
-let imageBox = document.querySelector('.slider-block__image-box');
+let imageBox = document.querySelector('.slider-block__image-box-wrapper');
 let mainNav = document.querySelector('.main-nav');
 let openMenuButton = document.querySelector('.page-header__open-button');
 let pageHeader = document.querySelector('.page-header__logo-panel');
@@ -44,18 +44,32 @@ window.addEventListener('resize', function() {
   if (window.innerWidth > 767) {
     mainNav.style.height = "";
     mainNav.classList.remove("main-nav__transition");
+
+    // fix transition bug in scale element
+    scale.classList.add("slider-block__transition");
   }
 });
 
 // cat slider - mobile version
 if (beforeButton && afterButton) {
-  beforeButton.addEventListener('click', function (evt) {
+    beforeButton.addEventListener('click', function (evt) {
     scale.classList.remove('js-is-right');
+    scale.classList.add('js-is-left');
     imageBox.classList.remove('js-is-after');
+    imageBox.classList.add('js-is-before');
   });
 
   afterButton.addEventListener('click', function (evt) {
+      scale.classList.remove('js-is-left');
       scale.classList.add('js-is-right');
+      imageBox.classList.remove('js-is-before');
       imageBox.classList.add('js-is-after');
     });
 }
+
+// fix transition bug in scale element
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 768) {
+    scale.classList.remove("slider-block__transition");
+  }
+});
