@@ -1,3 +1,4 @@
+
 .heading-stripe::after {
   content: "";
   display: block;
@@ -8,4 +9,25 @@
   margin-left: 23px;
 
   background-color: $leaf;
+}
+
+@media (min-width: $tablet-width) {
+  .heading-stripe {
+    &::after {
+      margin-top: 22px;
+      margin-left: 36px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      flex-grow: 1;
+      max-width: 28px;
+      height: 3px;
+      margin-top: 22px;
+      margin-right: 39px;
+
+      background-color: $leaf;
+    }
+  }
 }

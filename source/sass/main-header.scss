@@ -36,10 +36,6 @@
   margin-bottom: 3px;
 }
 
-.main-header__button {
-  margin-left: 2px;
-}
-
 @media (min-width: $tablet-width) {
   .main-header {
     min-height: 806px;
@@ -82,6 +78,10 @@
     top: 216px;
     width: 709px;
     height: 609px;
+  }
+
+  .main-header__button {
+    margin-left: 2px;
   }
 }
 

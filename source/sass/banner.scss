@@ -29,3 +29,32 @@
   line-height: 20px;
   color: $white;
 }
+
+@media (min-width: $tablet-width) {
+  .banner {
+    width: calc(100% - 60px);
+    padding-top: 70px;
+    padding-bottom: 77px;
+  }
+
+  .banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 198px;
+    width: 100%;
+    padding: 64px 94px 65px 90px;
+
+    @include bg-image("gift-photo-tablet@1x.jpg");
+  }
+
+  .banner__image {
+    margin-bottom: 0;
+  }
+
+  .banner__text {
+    max-width: 190px;
+    padding-top: 9px;
+
+    text-align: left;
+  }
+}
