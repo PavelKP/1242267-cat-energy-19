@@ -9,7 +9,7 @@
 }
 
 .extra-goods__item {
-  padding: 10px 0 17px 0;
+  padding: 12px 0 17px 0;
   border-bottom: $grey-border;
 }
 
@@ -19,7 +19,7 @@
 
 .extra-goods__product-name {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
 
   font-size: 16px;
   line-height: 20px;
@@ -48,7 +48,7 @@
 
   .extra-goods__item,
   .extra-goods__item:first-child {
-    padding: 23px 36px 27px 37px;
+    padding: 25px 36px 27px 37px;
     border: 1px solid $grey-dirty;
     border-bottom: 0;
   }
@@ -60,7 +60,7 @@
   .extra-goods__description {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
   }
 
   .extra-goods__product-name {

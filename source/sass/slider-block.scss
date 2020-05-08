@@ -1,6 +1,7 @@
 .slider-block {
   background-color: $grey-light;
   padding-bottom: 38px;
+  padding-top: 18px;
 }
 
 .slider-block__heading {
@@ -15,7 +16,7 @@
 .slider-block__text {
   padding-right: 14px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-family: $arial;
   font-size: 14px;
@@ -158,7 +159,7 @@
   }
 
   .slider-block__heading {
-    padding-top: 43px;
+    padding-top: 25px;
     margin-bottom: 65px;
 
     font-size: 60px;
@@ -222,7 +223,7 @@
 
   .slider-block__image-box {
     width: 690px;
-    height: 629px;
+    height: 630px;
     margin: 0 auto;
     display: flex;
   }
@@ -248,7 +249,7 @@
   }
 
   .slider-block__handle-wrapper {
-    margin-top: -94px;
+    margin-top: -95px;
   }
 
   .slider-block__handle {

@@ -64,15 +64,15 @@
     <main class="main">
       <header class="main-header-sub container-wide">
         <div class="container">
-          <h1 class="main-header-sub__heading">Подбор программы</h1>
+          <h1 class="main-header-sub__heading main-header-sub__heading--small">Подбор программы</h1>
           <p class="main-header-sub__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
       </header>
 
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="main-form__cat-field container-wide fieldset-reset">
-          <legend class="main-form__legend visually-hidden">Параметры кота</legend>
-          <div class="container">
+          <legend class="visually-hidden">Параметры кота</legend>
+          <div class="main-form__wrapper container">
             <label class="main-form__label">
               <span class="main-form__label-text">Имя:*</span>
               <input class="main-form__input" type="text" name="name" placeholder="барсик" size="15" autocomplete="off" required>
@@ -89,8 +89,8 @@
         </fieldset>
 
         <fieldset class="main-form__program-field container-wide fieldset-reset">
-          <legend class="main-form__legend container visually-hidden">Желаемая программа</legend>
-          <div class="container">
+          <legend class="visually-hidden">Желаемая программа</legend>
+          <div class="main-form__wrapper container">
             <label class="main-form__label">
               <input class="main-form__input visually-hidden" type="radio" name="program-type" value="loss" checked>
               <span class="main-form__custom-box main-form__custom-box--radio"></span>
@@ -113,7 +113,7 @@
             Контактные данные<br>
             (владельца кота)
           </legend>
-          <div class="container">
+          <div class="main-form__wrapper container">
             <label class="main-form__label">
               <span class="main-form__label-text">E-mail:*</span>
               <input class="main-form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
@@ -132,14 +132,14 @@
         </fieldset>
         <fieldset class="main-form__comment-field container-wide fieldset-reset">
           <legend class="main-form__legend heading-stripe">Комментарий</legend>
-          <div class="main-form__textarea-container container">
+          <div class="main-form__textarea-container main-form__wrapper container">
             <label class="visually-hidden" for="comment-id">Поле для указания комментария</label>
             <textarea class="main-form__textarea" id="comment-id" name="comment">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
         <fieldset class="main-form__add-field container-wide fieldset-reset">
           <legend class="main-form__legend heading-stripe">Дополнительно</legend>
-          <div class="container">
+          <div class="main-form__wrapper container">
             <label class="main-form__label">
               <input class="main-form__input visually-hidden" type="checkbox" name="sweetener" checked>
               <span class="main-form__custom-box"></span>
@@ -163,8 +163,8 @@
           </div>
         </fieldset>
         <div class="container-wide">
-          <div class="container">
-            <button class="button button--green button--big button-reset">Отправить заявку</button>
+          <div class="main-form__button-wrapper container">
+            <button class="main-form__button button button--green button--big button-reset">Отправить заявку</button>
             <p class="main-form__text">* — Обязательные поля</p>
           </div>
         </div>
