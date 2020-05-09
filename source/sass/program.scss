@@ -167,5 +167,57 @@
 @media (min-width: $desktop-width) {
   .program {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 110px 10px 110px;
+  }
+
+  .program__wrapper {
+    max-width: 46.7%;
+    padding: 34px 0 61px 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+    &--loss::before {
+      content: none;
+    }
+
+    &--gain::before {
+      content: none;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .program__heading {
+    margin-bottom: 32px;
+
+    &::before {
+      content: "";
+      width: 214px;
+      height: 121px;
+    }
+
+    &--loss::before {
+      background-position: 46% 48%;
+      background-size: 100px 110px;
+    }
+
+    &--gain::before {
+      background-position: 42% 60%;
+      background-size: 133px 100px;
+    }
+  }
+
+  .program__description {
+    padding: 0 53px;
+  }
+
+  .program__link {
+    margin-top: auto;
+    padding-left: 53px;
   }
 }

@@ -60,19 +60,11 @@
     align-items: flex-start;
     width: 354px;
     min-height: 230px;
-    padding-right: 100px;
+    padding-right: 95px;
     margin-bottom: 87px;
 
     font-size: 16px;
     line-height: 24px;
-
-    &:nth-child(even) {
-      padding-left: 30px;
-    }
-
-    &:nth-child(4) {
-      padding-right: 75px;
-    }
 
     &:nth-last-child(-n+2) {
       margin-bottom: 0;
@@ -102,7 +94,7 @@
     }
 
     &:nth-child(even)::after {
-      right: 77px;
+      right: 107px;
     }
 
     &:nth-child(1)::after {
@@ -112,5 +104,28 @@
 
   .bullet-list__break {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bullet-list {
+    justify-content: flex-start;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .bullet-list__item {
+    width: 325px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+
+    &:nth-child(1n)::after {
+      right: 78px;
+    }
+
+    &:nth-child(1)::after {
+      right: 96px;
+    }
   }
 }

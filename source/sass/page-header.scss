@@ -83,9 +83,15 @@
 
 @media (min-width: $desktop-width) {
   .page-header--index {
+    min-height: 696px;
     padding-bottom: 554px;
+
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, $white 50%, #65a93c 50%);
     background-repeat: no-repeat;
     background-position: right top;
+  }
+
+  .page-header__wrapper {
+    padding-top: 52px;
   }
 }

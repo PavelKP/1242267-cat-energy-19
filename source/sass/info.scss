@@ -22,12 +22,29 @@
     border-bottom: $grey-border;
   }
 
+  .info__wrapper {
+    width: 100%;
+    padding-top: 29px;
+    padding-left: 30px;
+    margin: 0;
+  }
+
   .info__heading {
     font-size: 60px;
     margin-bottom: 72px;
   }
+}
 
+@media (min-width: $desktop-width) {
   .info__wrapper {
-    padding-top: 29px;
+    width: 100%;
+    padding-top: 27px;
+    padding-left: 110px;
+    margin: 0;
+  }
+
+  .info {
+    padding-bottom: 15px;
+    border-bottom: none;
   }
 }

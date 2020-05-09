@@ -68,7 +68,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    justify-content: flex-start;
+    padding-left: 129px;
+  }
+
   .site-list__item {
+    margin-right: 36px;
+    margin-left: 0;
+
     font-size: 20px;
     line-height: 25px;
   }
