@@ -80,3 +80,13 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .more-goods__wrapper {
+    padding-top: 162px;
+  }
+
+  .more-goods__button {
+    max-width: 169px;
+  }
+}

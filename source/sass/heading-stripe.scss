@@ -31,3 +31,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .heading-stripe {
+    &::before {
+      max-width: 70px;
+    }
+  }
+}
