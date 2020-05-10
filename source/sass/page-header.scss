@@ -5,6 +5,18 @@
   min-height: 65px;
 }
 
+.page-header__logo-image {
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__open-button {
   display: none;
   position: relative;
