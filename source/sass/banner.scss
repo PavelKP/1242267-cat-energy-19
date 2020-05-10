@@ -32,6 +32,8 @@
 
 @media (min-width: $tablet-width) {
   .banner {
+    display: flex;
+    justify-content: center;
     width: calc(100% - 60px);
     padding-top: 70px;
     padding-bottom: 77px;
@@ -41,7 +43,7 @@
     display: flex;
     justify-content: space-between;
     min-height: 200px;
-    width: 100%;
+    width: 708px;
     padding: 64px 94px 65px 90px;
 
     @include bg-image("gift-photo-tablet@1x.jpg");

@@ -49,3 +49,9 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header-sub__description {
+    padding-left: 1px;
+  }
+}
