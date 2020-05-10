@@ -3,3 +3,129 @@
   line-height: 18px;
   color: $grey;
 }
+
+.bullet-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+
+    background-color: $leaf;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.bullet-list__item--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.bullet-list__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.bullet-list__item--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.bullet-list__item--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
+.bullet-list__break {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .bullet-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+
+    counter-reset: bullet-number;
+  }
+
+  .bullet-list__item {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 354px;
+    min-height: 230px;
+    padding-right: 95px;
+    margin-bottom: 87px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      margin-bottom: 33px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      counter-increment: bullet-number;
+      content: counter(bullet-number);
+      position: absolute;
+      top: 89px;
+      right: 77px;
+      z-index: -1;
+
+      font-family: $oswald;
+      font-size: 281px;
+      color: $grey-light;
+    }
+
+    &:nth-child(odd)::after {
+      right: 107px;
+    }
+
+    &:nth-child(even)::after {
+      right: 107px;
+    }
+
+    &:nth-child(1)::after {
+      right: 125px;
+    }
+  }
+
+  .bullet-list__break {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bullet-list {
+    justify-content: flex-start;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .bullet-list__item {
+    width: 325px;
+    padding-right: 70px;
+    margin-bottom: 50px;
+
+    &:nth-child(1n)::after {
+      right: 78px;
+    }
+
+    &:nth-child(1)::after {
+      right: 96px;
+    }
+  }
+}

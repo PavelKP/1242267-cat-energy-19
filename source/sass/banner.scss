@@ -1,21 +1,22 @@
 .banner {
+  width: 280px;
   padding-top: 39px;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
 }
 
 .banner__wrapper {
   min-height: 289px;
-  padding: 65px 60px 20px 60px;
+  padding: 65px 58px 20px 58px;
 
   text-align: center;
 
   background-color: $leaf;
 
-  @include bg-image("../img/gift-photo-mobile@1x.jpg");
+  @include bg-image("gift-photo-mobile@1x.jpg");
 }
 
 .banner__image {
-  margin-bottom: 64px;
+  margin-bottom: 58px;
 
   fill: $white;
 }
@@ -27,4 +28,59 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 60px);
+    padding-top: 70px;
+    padding-bottom: 77px;
+  }
+
+  .banner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+    width: 708px;
+    padding: 64px 94px 65px 90px;
+
+    @include bg-image("gift-photo-tablet@1x.jpg");
+  }
+
+  .banner__image {
+    margin-bottom: 0;
+  }
+
+  .banner__text {
+    max-width: 190px;
+    padding-top: 9px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .banner {
+    max-width: 245px;
+    min-height: 289px;
+    padding: 0;
+  }
+
+  .banner__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 19px 42px 21px;
+
+    @include bg-image("gift-photo-desktop@1x.jpg");
+  }
+
+  .banner__text {
+    text-align: center;
+  }
+
+  .banner__image {
+    margin-bottom: 53px;
+  }
 }

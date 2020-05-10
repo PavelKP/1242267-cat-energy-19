@@ -1,0 +1,27 @@
+.main-nav {
+  border-top: $grey-border;
+
+  overflow: hidden;
+}
+
+.main-nav__transition {
+  transition: 0.5s ease;
+}
+
+.main-nav__minimize {
+  height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    height: 100%;
+    width: 459px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+  }
+}

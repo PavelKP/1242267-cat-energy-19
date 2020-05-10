@@ -26,3 +26,25 @@ a {
 *::after {
   box-sizing: border-box;
 }
+
+/* stylelint-disable */
+/* remove increment arrows */
+/* -- chrome */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --firefox */
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: textfield;
+}
+
+/* remove cross-button in IE forms */
+input::-ms-clear {
+  display: none;
+}
+/* stylelint-enable */

@@ -1,12 +1,15 @@
 @import "variables.scss";
+@import "mixins.scss";
 @import "fonts.scss";
 @import "normalize.scss";
 @import "global.scss";
 @import "service.scss";
+@import "button.scss";
 @import "visually-hidden.scss";
 
 /*  common blocks - top */
 @import "page-header.scss";
+@import "main-nav.scss";
 @import "site-list.scss";
 @import "main.scss";
 
@@ -20,6 +23,7 @@
 /*  products blocks */
 @import "main-header-sub.scss";
 @import "products.scss";
+@import "goods.scss";
 @import "more-goods.scss";
 @import "extra.scss";
 @import "banner.scss";
@@ -30,5 +34,5 @@
 /*  common blocks - bottom */
 @import "address.scss";
 @import "page-footer.scss";
-@import "button.scss";
+@import "social.scss";
 @import "heading-stripe.scss";

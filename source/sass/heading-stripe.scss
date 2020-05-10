@@ -1,15 +1,41 @@
-.heading-stripe {
-  align-items: center;
 
-  &::after {
-    content: "";
-    display: block;
-    flex-grow: 1;
-    min-width: 50px;
-    height: 3px;
-    margin-top: 7px;
-    margin-left: 24px;
+.heading-stripe::after {
+  content: "";
+  display: block;
+  flex-grow: 1;
+  min-width: 50px;
+  height: 3px;
+  margin-top: 14px;
+  margin-left: 23px;
 
-    background-color: $leaf;
+  background-color: $leaf;
+}
+
+@media (min-width: $tablet-width) {
+  .heading-stripe {
+    &::after {
+      margin-top: 22px;
+      margin-left: 36px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      flex-grow: 1;
+      max-width: 28px;
+      height: 3px;
+      margin-top: 22px;
+      margin-right: 39px;
+
+      background-color: $leaf;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading-stripe {
+    &::before {
+      max-width: 70px;
+    }
   }
 }

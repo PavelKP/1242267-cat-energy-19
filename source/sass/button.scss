@@ -14,16 +14,41 @@
 
   &--green {
     background-color: $leaf;
+
+    &:hover {
+      background-color: $grass;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 
   &--grey {
     color: $grey;
 
     background-color: $grey-light;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($grey, 0.3);
+    }
   }
 
   &--big {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--huge {
+    width: 245px;
+    min-height: 52px;
+    font-size: 20px;
+    line-height: 25px;
   }
 }

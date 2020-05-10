@@ -1,4 +1,5 @@
 .address {
+  position: relative;
   background-color: $white;
 
   &--grey {
@@ -9,11 +10,11 @@
 .address__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 26px 0 31px 0;
+  padding: 27px 0;
 }
 
 .address__text {
-  width: 44%;
+  max-width: 154px;
   margin: 0;
 
   font-size: 16px;
@@ -22,7 +23,7 @@
 }
 
 .address__location {
-  width: 49%;
+  max-width: 154px;
 
   font-family: $arial;
   font-size: 14px;
@@ -34,5 +35,59 @@
 .address__map {
   min-height: 362px;
 
-  @include bg-image("../img/bg-map-mobile@1x.png", 0, -38px);
+  @include bg-image("bg-map-mobile@1x.png", center, -38px);
+}
+
+@media (min-width: $tablet-width) {
+  .address__wrapper {
+    padding: 64px 41px 56px 41px;
+    min-height: 201px;
+  }
+
+  .address__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .address__location {
+    max-width: 175px;
+
+    text-align: right;
+    font-size: 16px;
+  }
+
+  .address__city {
+    display: block;
+    margin-top: 19px;
+  }
+
+  .address__map {
+    min-height: 396px;
+
+    @include bg-image("bg-map-tablet@1x.png", center, -4px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    max-width: 569px;
+    padding: 66px 89px 48px 75px;
+    background-color: white;
+  }
+
+  .address__location {
+    max-width: 155px;
+    margin-top: -2px;
+
+    text-align: left;
+  }
+
+  .address__map {
+    min-height: 400px;
+
+    @include bg-image("bg-map-desktop@1x.png", center, 0);
+  }
 }
