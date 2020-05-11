@@ -109,23 +109,22 @@
 
 @media (min-width: $desktop-width) {
   .bullet-list {
-    justify-content: flex-start;
-    width: 100%;
-    max-width: none;
+    justify-content: space-between;
+    max-width: 1220px;
     margin: 0;
   }
 
   .bullet-list__item {
-    width: 325px;
-    padding-right: 70px;
+    width: 245px;
+    padding-right: 0;
     margin-bottom: 50px;
 
     &:nth-child(1n)::after {
-      right: 78px;
+      right: -3px;
     }
 
     &:nth-child(1)::after {
-      right: 96px;
+      right: 15px;
     }
   }
 }
