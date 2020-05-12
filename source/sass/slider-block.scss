@@ -116,38 +116,72 @@
   }
 }
 
-.slider-block__scale.js-is-right::after {
-  transform: translateX(36px);
+.slider-block__image-box-wrapper {
+  margin-bottom: 31px;
 }
 
 .slider-block__image-box {
   display: flex;
-  justify-content: center;
-  margin-bottom: 31px;
+  justify-content: space-between; //remove shaking of bg images (?)
+  width: 320px;
+  min-height: 240px;
+  margin: 0 auto;
 }
 
 .slider-block__image {
-  display: block;
+  width: 320px;
+}
 
-  &--after {
-    display: none;
+.slider-block__case {
+  transition: width 0.5s ease;
+}
+
+// default image position
+.slider-block__case--left {
+  width: 100%;
+
+  @include bg-image("before-mobile@1x.png", left, top);
+}
+
+.slider-block__case--right {
+  width: 0%;
+
+  @include bg-image("after-mobile@1x.png", right, top);
+}
+
+// before image position
+.slider-block__image-box-wrapper.js-is-before {
+  .slider-block__case--right {
+    width: 0%;
+  }
+
+  .slider-block__case--left {
+    width: 100%;
   }
 }
 
+// after image position
 .slider-block__image-box-wrapper.js-is-after {
-  .slider-block__image--after {
-    display: block;
+  .slider-block__case--right {
+    width: 100%;
   }
 
-  .slider-block__image--before {
-    display: none;
+  .slider-block__case--left {
+    width: 0%;
   }
 }
+
+// green toggle animation
+.slider-block__scale.js-is-right::after {
+  transform: translateX(36px);
+}
+
 
 @media (min-width: $tablet-width) {
   .slider-block__image-box-wrapper {
     background-image: linear-gradient($white 170px, transparent 170px), linear-gradient(to right, $grey-light 50%, #eaeaea 50%);
     padding-left: 14px;
+    margin-bottom: 0;
   }
 
   .slider-block {
@@ -229,23 +263,38 @@
     display: flex;
   }
 
-  .slider-block__case img {
-    object-fit: cover;
-  }
-
+  // default image position
   .slider-block__case--left {
     width: 49%;
 
-    & img {
-      object-position: 0% 50%;
-    }
+    background-image: url("../img/before-tablet@1x.png");
   }
 
   .slider-block__case--right {
     width: 51%;
 
-    & img {
-      object-position: right 50%;
+    background-image: url("../img/after-tablet@1x.png");
+  }
+
+  // before image position
+  .slider-block__image-box-wrapper.js-is-before {
+    .slider-block__case--right {
+      width: 0%;
+    }
+
+    .slider-block__case--left {
+      width: 100%;
+    }
+  }
+
+  // after image position
+  .slider-block__image-box-wrapper.js-is-after {
+    .slider-block__case--right {
+      width: 100%;
+    }
+
+    .slider-block__case--left {
+      width: 0%;
     }
   }
 
@@ -326,43 +375,8 @@
     order: 3;
   }
 
-  /* JS logic */
-  .slider-block__image {
-    display: block;
-    width: 690px;
-    height: 517px;
-
-    &--after {
-      display: block;
-    }
-  }
-
   .slider-block__case {
     transition: width 1.5s ease;
-  }
-
-  .slider-block__image-box-wrapper.js-is-after {
-    .slider-block__case--right {
-      width: 99.9%;
-    }
-
-    .slider-block__case--left {
-      width: 0%;
-    }
-
-    .slider-block__image--before {
-      display: block;
-    }
-  }
-
-  .slider-block__image-box-wrapper.js-is-before {
-    .slider-block__case--right {
-      width: 0%;
-    }
-
-    .slider-block__case--left {
-      width: 100%;
-    }
   }
 
   .slider-block__scale.js-is-right,
@@ -382,7 +396,7 @@
 }
 
 .slider-block__transition {
-  transition: transform 1s ease;
+  transition: transform 1.5s ease;
 }
 
 @media (min-width: $desktop-width) {
@@ -442,7 +456,8 @@
   }
 
   .slider-block__image-box {
-    width: 690px;
+    justify-content: space-between; //remove shaking of bg images (????)
+    width: 760px;
     margin: 0;
     margin-top: -55px;
   }
@@ -454,13 +469,17 @@
   }
 
   .slider-block__case--left {
-    width: 52.8%;
+    width: 48%;
+
+    background-image: url("../img/before-desktop@1x.png");
   }
 
   .slider-block__case--right {
     min-height: 652px;
-    width: 47.2%;
+    width: 52%;
 
-    background-image: linear-gradient($white 190px, transparent 190px), linear-gradient(transparent 51px, #eaeaea 20px);
+    background-image: url("../img/after-desktop@1x.png"), linear-gradient($white 190px, transparent 190px), linear-gradient(transparent 51px, #eaeaea 20px);
+    background-position: right 70px top 0, 0% 0%, 0% 0%;
+    background-repeat: no-repeat;
   }
 }
