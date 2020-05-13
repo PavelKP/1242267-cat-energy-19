@@ -20,23 +20,40 @@
     background-color: $leaf;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 50px 50px;
   }
 }
 
 .bullet-list__item--leaf::before {
   background-image: url("../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
 }
 
 .bullet-list__item--powder::before {
   background-image: url("../img/advantage-powder@1x.png");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
 }
 
 .bullet-list__item--dining::before {
   background-image: url("../img/advantage-dining@1x.png");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
 }
 
 .bullet-list__item--clock::before {
   background-image: url("../img/advantage-clock@1x.png");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 }
 
 .bullet-list__break {
