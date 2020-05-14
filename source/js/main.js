@@ -9,41 +9,41 @@ let pageHeader = document.querySelector('.page-header__logo-panel');
 let menuItemHeight = 66;
 
 //On page loading show closed button and minimize menu
-mainNav.classList.add("main-nav__minimize");
-pageHeader.classList.add("page-header__logo-panel--closed");
-openMenuButton.classList.add("page-header__open-button--show");
-openMenuButton.setAttribute("aria-label", "Развернуть меню");
+mainNav.classList.add('main-nav__minimize');
+pageHeader.classList.add('page-header__logo-panel--closed');
+openMenuButton.classList.add('page-header__open-button--show');
+openMenuButton.setAttribute('aria-label', 'Развернуть меню');
 
 openMenuButton.addEventListener('click', function(evt) {
   // count menu items every time when click fires
   let mainNavItemAmount = document.querySelectorAll('.site-list__item').length;
   // on click expand menu
-  if (mainNav.classList.contains("main-nav__minimize")) {
+  if (mainNav.classList.contains('main-nav__minimize')) {
     // add transition property to mainNav
-    mainNav.classList.add("main-nav__transition");
+    mainNav.classList.add('main-nav__transition');
 
-    mainNav.classList.remove("main-nav__minimize");
-    mainNav.style.height = (mainNavItemAmount * menuItemHeight) + 1 + "px";
-    pageHeader.classList.remove("page-header__logo-panel--closed");
-    pageHeader.classList.add("page-header__logo-panel--opened");
-    openMenuButton.setAttribute("aria-label", "Свернуть меню");
+    mainNav.classList.remove('main-nav__minimize');
+    mainNav.style.height = (mainNavItemAmount * menuItemHeight) + 1 + 'px';
+    pageHeader.classList.remove('page-header__logo-panel--closed');
+    pageHeader.classList.add('page-header__logo-panel--opened');
+    openMenuButton.setAttribute('aria-label', 'Свернуть меню');
   } else {
     // minimize menu - 0px
-    mainNav.classList.add("main-nav__minimize");
+    mainNav.classList.add('main-nav__minimize');
     // reset inline height
-    mainNav.style.height = "";
+    mainNav.style.height = '';
 
-    pageHeader.classList.remove("page-header__logo-panel--opened");
-    pageHeader.classList.add("page-header__logo-panel--closed");
-    openMenuButton.setAttribute("aria-label", "Развернуть меню");
+    pageHeader.classList.remove('page-header__logo-panel--opened');
+    pageHeader.classList.add('page-header__logo-panel--closed');
+    openMenuButton.setAttribute('aria-label', 'Развернуть меню');
   }
 })
 
 //On resize to tablet version reset inline height and remove transition
 window.addEventListener('resize', function() {
   if (window.innerWidth > 767) {
-    mainNav.style.height = "";
-    mainNav.classList.remove("main-nav__transition");
+    mainNav.style.height = '';
+    mainNav.classList.remove('main-nav__transition');
   }
 });
 
@@ -69,14 +69,14 @@ if (document.body.classList.contains('index-page')) {
   // fix transition bug in scale element
   window.addEventListener('resize', function() {
     if (window.innerWidth < 768) {
-      scale.classList.remove("slider-block__transition");
+      scale.classList.remove('slider-block__transition');
     }
   });
 
   // fix transition bug in scale element
   window.addEventListener('resize', function() {
     if (window.innerWidth > 767) {
-      scale.classList.add("slider-block__transition");
+      scale.classList.add('slider-block__transition');
     }
   });
 
