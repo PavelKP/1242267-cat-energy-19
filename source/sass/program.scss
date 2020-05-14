@@ -51,6 +51,7 @@
 }
 
 .program__description {
+  max-width: 100%; // for IE
   margin: 0;
   padding: 0 21px 20px 21px;
 

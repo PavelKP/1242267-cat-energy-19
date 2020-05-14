@@ -50,6 +50,7 @@
   }
 
   .address__text {
+    max-width: 160px; //for IE
     font-size: 20px;
     line-height: 25px;
   }
