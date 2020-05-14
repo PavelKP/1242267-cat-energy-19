@@ -36,7 +36,7 @@
       <symbol id="icon-right-arrow-verylong" viewBox="0 0 32 11">
         <path d="M25.4 0L32 5.5 25.4 11V6.6H0V4.4h25.4z"/>
       </symbol>
-      <symbol id="logo-adaptive" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 202 59.5" xml:space="preserve">
+      <symbol id="logo-adaptive" xmlns="http://www.w3.org/2000/svg" x="0" y="0"  xml:space="preserve">
         <style>
           .st0 {
             fill: #fdc305;
@@ -61,6 +61,10 @@
           .tablet,
           .desktop {
             display: none;
+          }
+
+          .title {
+            transform: scale(1.2) translate(-20px, -20px);
           }
         </style>
         <g class="mobile">
@@ -118,7 +122,7 @@
         <path class="st1"
           d="M25.9 28s-3.8-1.4-5.2-1.8c-1.4-.4-2.3-.7-4 .6-1.8 1.3-1.7 3.9-1.7 3.9s.4 1 .5 1.4c0 .5-1.2.4-2 .4s-.9-1.4-.3-3.1c.6-1.7 1.9-3.7 1.9-3.7-5.4 2.8-15 9.4-15 9.4s2.9-.3 8.2.2c5.3.5 5 4.7 5 4.7s3.5-1 5.6-1.1c2.1-.1 2.3 2.1 2.3 2.1l.5 3.9s.5-.6 2.7-2.4c1.9-1.5 3.9-1.4 4.4-1.3L25.9 28z" />
         </g>
-        <g>
+        <g class="title">
         /* cat */
         <path class="st3"
           d="M89.6 37.1c-.7-.9-1-2.1-1-3.7v-5.3c0-1.6.3-2.9 1-3.7.7-.8 1.8-1.3 3.4-1.3 1.5 0 2.6.4 3.2 1.1.6.7.9 1.8.9 3.2v1.3h-2.9v-1.4c0-.4 0-.8-.1-1.1 0-.3-.2-.5-.3-.7-.2-.2-.5-.3-.8-.3-.6 0-.9.2-1.1.5-.2.4-.2.9-.2 1.6v6.8c0 .7.1 1.2.3 1.6.2.3.5.5 1 .5s.8-.2 1-.5c.1-.3.2-.9.2-1.6v-1.5h2.9v1.2c0 1.4-.3 2.5-.9 3.3-.6.8-1.7 1.2-3.2 1.2-1.7.1-2.8-.3-3.4-1.2zM101.1 23.3h3.4l2.9 14.9h-2.8l-.6-3.3h-2.4l-.6 3.3h-2.9l3-14.9zm2.6 9.7l-.9-6-.9 6h1.8zM109.5 25.5h-2.3v-2.2h7.6v2.2h-2.3v12.7h-3.1V25.5z" />
@@ -133,7 +137,14 @@
       <div class="page-header__wrapper">
         <div class="page-header__logo-panel container">
           <a class="page-header__logo-link">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+
+
+
+            <!--<svg class="page-header__logo-image" width="191" height="39" role="img">
+              <use xlink:href="#logo-adaptive"></use>
+            </svg>-->
+
+            <img class="page-header__logo-image" src="img/logo-adaptive.svg" style="width: 100%;"
               alt="Логотип Cat Energy">
           </a>
           <button class="page-header__open-button button-reset"></button>

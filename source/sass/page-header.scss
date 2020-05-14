@@ -7,6 +7,8 @@
 
 .page-header__logo-image {
   display: block;
+  width: 191px;
+  height: 39px;
 
   &:hover {
     opacity: 0.8;
@@ -73,6 +75,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -94,6 +101,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__logo-panel {
+    padding-left: 80px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
+  }
+
   .page-header--index {
     min-height: 696px;
     padding-bottom: 554px;
