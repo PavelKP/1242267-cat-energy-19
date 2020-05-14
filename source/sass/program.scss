@@ -80,6 +80,7 @@
   &::after {
     content: "";
     position: relative;
+    z-index: 1;
     order: 2;
     flex-shrink: 0;
     width: 11px;

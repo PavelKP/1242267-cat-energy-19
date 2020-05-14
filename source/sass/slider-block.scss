@@ -123,7 +123,7 @@
 .slider-block__image-box {
   display: table; //remove shaking of bg images (chrome bug)
   width: 320px;
-  min-height: 240px;
+  height: 240px;  //fix for FF
   margin: 0 auto;
 }
 
