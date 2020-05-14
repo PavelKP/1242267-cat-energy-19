@@ -9,7 +9,11 @@
     linear-gradient(#65a93c 305px, $white 305px);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: auto, 100% 305px, auto;
+  background-size: 320px 305px, 100% 305px, auto;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient(90deg, #65a93c, #63a73a), linear-gradient(#65a93c 305px, $white 305px);
+  }
 }
 
 .main-header__heading {

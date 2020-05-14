@@ -75,6 +75,7 @@
 
 .main-form__custom-box {
   position: relative;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   margin-right: 16px;
@@ -195,7 +196,7 @@
   border: 1px solid rgba($grey-dirty, 0.5);
 
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
 
   resize: none;
   outline: none;
@@ -251,6 +252,7 @@
 @media (min-width: $tablet-width) {
   .main-form {
     font-size: 20px;
+    line-height: 25px;
   }
 
   .main-form__cat-field,
@@ -306,11 +308,10 @@
     padding: 0 20px 2px 20px;
   }
 
-  .main-form input::placeholder,
   .main-form input,
   .main-form textarea {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 25px;
   }
 
   .main-form__legend {
@@ -408,7 +409,7 @@
   }
 
   .main-form__textarea {
-    padding: 14px 17px 14px 17px;
+    padding: 13px 17px 14px 17px;
     min-height: 173px;
   }
 
@@ -461,13 +462,14 @@
     }
 
     .main-form__label {
-      flex-grow: 1;
       margin-bottom: 20px;
 
       &--email {
-        flex-grow: 0;
-        width: 569px;
-        margin-right: 80px;
+        width: 46.7%;
+      }
+
+      &--tel {
+        width: 46.7%;
       }
     }
   }
@@ -491,14 +493,11 @@
   .main-form__add-field {
     .main-form__wrapper {
       padding: 27px 110px 17px 110px;
+      justify-content: space-between;
     }
 
     .main-form__label {
-      width: 325px;
-
-      &:last-child {
-        width: 240px;
-      }
+      width: 245px;
     }
   }
 

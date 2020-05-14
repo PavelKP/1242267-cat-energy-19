@@ -36,6 +36,11 @@
   min-height: 362px;
 
   @include bg-image("bg-map-mobile@1x.png", center, -38px);
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px 400px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +50,7 @@
   }
 
   .address__text {
+    max-width: 160px; //for IE
     font-size: 20px;
     line-height: 25px;
   }
@@ -65,6 +71,11 @@
     min-height: 396px;
 
     @include bg-image("bg-map-tablet@1x.png", center, -4px);
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 767px 400px;
+    }
   }
 }
 
@@ -89,5 +100,10 @@
     min-height: 400px;
 
     @include bg-image("bg-map-desktop@1x.png", center, 0);
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1440px 400px;
+    }
   }
 }

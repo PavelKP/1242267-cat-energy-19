@@ -44,32 +44,40 @@ window.addEventListener('resize', function() {
   if (window.innerWidth > 767) {
     mainNav.style.height = "";
     mainNav.classList.remove("main-nav__transition");
-
-    // fix transition bug in scale element
-    scale.classList.add("slider-block__transition");
   }
 });
 
-// cat slider - mobile version
-if (beforeButton && afterButton) {
-    beforeButton.addEventListener('click', function (evt) {
-    scale.classList.remove('js-is-right');
-    scale.classList.add('js-is-left');
-    imageBox.classList.remove('js-is-after');
-    imageBox.classList.add('js-is-before');
+if (document.body.classList.contains('index-page')) {
+
+  // cat slider
+  if (beforeButton && afterButton) {
+      beforeButton.addEventListener('click', function (evt) {
+      scale.classList.remove('js-is-right');
+      scale.classList.add('js-is-left');
+      imageBox.classList.remove('js-is-after');
+      imageBox.classList.add('js-is-before');
+    });
+
+    afterButton.addEventListener('click', function (evt) {
+        scale.classList.remove('js-is-left');
+        scale.classList.add('js-is-right');
+        imageBox.classList.remove('js-is-before');
+        imageBox.classList.add('js-is-after');
+      });
+  }
+
+  // fix transition bug in scale element
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 768) {
+      scale.classList.remove("slider-block__transition");
+    }
   });
 
-  afterButton.addEventListener('click', function (evt) {
-      scale.classList.remove('js-is-left');
-      scale.classList.add('js-is-right');
-      imageBox.classList.remove('js-is-before');
-      imageBox.classList.add('js-is-after');
-    });
-}
+  // fix transition bug in scale element
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 767) {
+      scale.classList.add("slider-block__transition");
+    }
+  });
 
-// fix transition bug in scale element
-window.addEventListener('resize', function() {
-  if (window.innerWidth < 768) {
-    scale.classList.remove("slider-block__transition");
-  }
-});
+}

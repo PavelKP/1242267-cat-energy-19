@@ -13,6 +13,11 @@
   background-color: $leaf;
 
   @include bg-image("gift-photo-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px 289px;
+  }
 }
 
 .banner__image {
@@ -47,6 +52,11 @@
     padding: 64px 94px 65px 90px;
 
     @include bg-image("gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px 200px;
+    }
   }
 
   .banner__image {
@@ -74,6 +84,11 @@
     padding: 64px 19px 42px 21px;
 
     @include bg-image("gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px 289px;
+    }
   }
 
   .banner__text {
