@@ -39,7 +39,8 @@
 @media (min-width: $desktop-width) {
   .container-wide {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1300px;
+    padding: 0 40px;
     /* to prevent horizontal scroll */
   }
 

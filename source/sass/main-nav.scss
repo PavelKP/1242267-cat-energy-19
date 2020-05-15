@@ -14,7 +14,8 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    height: 100%;
+    height: auto;
+    min-height: 150px;
     width: 440px;
     border: none;
   }
@@ -23,5 +24,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 50%;
+    padding-top: 73px;
+    padding-left: 98px;
   }
 }

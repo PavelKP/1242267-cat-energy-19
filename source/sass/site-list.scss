@@ -69,16 +69,20 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    justify-content: flex-start;
-    padding-left: 129px;
+    justify-content: center;
+    width: 545px;
   }
 
   .site-list__item {
-    margin-right: 36px;
-    margin-left: 0;
+    padding: 0;
+    margin: 0 17px;
 
     font-size: 20px;
     line-height: 25px;
+
+    &:last-child {
+      margin-right: 17px;
+    }
   }
 
   .site-list--desktop-index .site-list__link {
