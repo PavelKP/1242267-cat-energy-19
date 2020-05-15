@@ -28,25 +28,19 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 20px;
   }
 
   .site-list__item {
     display: block;
     min-height: 65px;
     padding-top: 21px;
-    margin: 0;
+    margin: 0 17px;
     border: none;
 
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   .site-list__link {
@@ -72,7 +66,6 @@
   .site-list {
     justify-content: center;
     width: 545px;
-    padding-top: 0;
   }
 
   .site-list__item {
