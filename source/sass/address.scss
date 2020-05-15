@@ -35,6 +35,8 @@
 .address__map {
   min-height: 362px;
 
+  background-color: $grey-light;
+
   @include bg-image("bg-map-mobile@1x.png", center, -38px);
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dppx) {
@@ -44,9 +46,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .address {
+    max-width: 100%;
+    padding: 0;
+  }
+
   .address__wrapper {
     padding: 64px 41px 56px 41px;
     min-height: 201px;
+
+    background-color: $white;
   }
 
   .address__text {
@@ -80,13 +89,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .address__container {
+    position: relative;
+  }
+
   .address__wrapper {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 94px;
+    left: 41px;
     max-width: 569px;
     padding: 66px 89px 48px 75px;
-    background-color: white;
   }
 
   .address__location {

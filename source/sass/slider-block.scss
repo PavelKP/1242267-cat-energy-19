@@ -317,7 +317,7 @@
   }
 
   .slider-block__handle-wrapper {
-    margin-top: -95px;
+    margin-top: -96px;
   }
 
   .slider-block__handle {
@@ -488,10 +488,10 @@
   .slider-block__case--left {
     width: 52.8%;
 
-    background-image: url("../img/before-desktop@1x.png");
+    background-image: url("../img/before-desktop@1x.png"), linear-gradient(#ffffff 190px, transparent 190px), linear-gradient(transparent 51px, $grey-light 20px);
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
-      background-image: url("../img/before-desktop@2x.png");
+      background-image: url("../img/before-desktop@2x.png"), linear-gradient(#ffffff 190px, transparent 190px), linear-gradient(transparent 51px, $grey-light 20px);
     }
   }
 

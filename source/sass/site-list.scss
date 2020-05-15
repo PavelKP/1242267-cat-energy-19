@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 20px;
   }
 
   .site-list__item {
@@ -71,6 +72,7 @@
   .site-list {
     justify-content: center;
     width: 545px;
+    padding-top: 0;
   }
 
   .site-list__item {
