@@ -1,14 +1,19 @@
 
-.heading-stripe::after {
-  content: "";
-  display: block;
-  flex-grow: 1;
-  min-width: 50px;
-  height: 3px;
-  margin-top: 14px;
-  margin-left: 23px;
+.heading-stripe {
+  font-weight: normal;
+  margin: 0;
 
-  background-color: $leaf;
+  &::after {
+    content: "";
+    display: block;
+    flex-grow: 1;
+    min-width: 50px;
+    height: 3px;
+    margin-top: 14px;
+    margin-left: 23px;
+
+    background-color: $leaf;
+  }
 }
 
 @media (min-width: $tablet-width) {
