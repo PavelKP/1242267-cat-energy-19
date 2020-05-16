@@ -3,6 +3,11 @@
   background-color: $white;
 }
 
+.address__container {
+  position: relative;
+  z-index: 1;
+}
+
 .address__wrapper {
   display: flex;
   justify-content: space-between;
@@ -85,10 +90,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .address__container {
-    position: relative;
-  }
-
   .address__wrapper {
     position: absolute;
     top: 94px;

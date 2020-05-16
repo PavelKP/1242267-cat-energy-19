@@ -10,6 +10,36 @@
       document.createElement("picture");
     </script>
     <script src="js/picturefill.min.js" async></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fc93d848-44da-4190-85eb-41968207f60b
+    &lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+
+        var myMap = new ymaps.Map("map", {
+            center: [59.938784, 30.323126],
+            zoom: 17
+        });
+
+        var myPlacemark = new ymaps.Placemark([59.938784, 30.323126], {}, {
+            iconLayout: "default#image",
+            iconImageHref: "img/map-pin.png",
+            iconImageSize: [124, 106],
+            iconImageOffset: [-62, -106]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+
+        //console.log(myMap.getCenter());
+
+        if (window.innerWidth > 1299) {
+          myMap.setCenter([59.93908399999102, 30.319529999999999]);
+        } else {
+          myMap.setCenter([59.93878399999102, 30.323125999999966]);
+        }
+      };
+  </script>
   </head>
   <body class="program-page">
 
@@ -197,7 +227,7 @@
             </address>
           </div>
         </div>
-        <div class="address__map"></div>
+        <div id="map" class="address__map"></div>
       </div>
     </main>
 
