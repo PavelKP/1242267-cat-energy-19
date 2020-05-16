@@ -45,8 +45,14 @@
     <div class="page-header__wrapper">
       <div class="page-header__logo-panel container">
         <a class="page-header__logo-link" href="index.html"  aria-label="HTML Academy: Кэт энерджи">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
-            alt="Логотип Cat Energy">
+          <picture>
+            <source media="(min-width: 1300px)"
+                    srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)"
+                    srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" width="191" height="39" src="img/logo-mobile.svg"
+              alt="Логотип Cat Energy">
+          </picture>
         </a>
         <button class="page-header__open-button button-reset"></button>
       </div>
