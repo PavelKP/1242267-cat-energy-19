@@ -6,6 +6,8 @@
 @import "service.scss";
 @import "button.scss";
 @import "visually-hidden.scss";
+@import "heading-stripe.scss";
+@import "heading-stripe-cross.scss";
 
 /*  common blocks - top */
 @import "page-header.scss";
@@ -18,6 +20,7 @@
 @import "program.scss";
 @import "info.scss";
 @import "bullet-list.scss";
+@import "example.scss";
 @import "slider-block.scss";
 
 /*  products blocks */
@@ -35,4 +38,3 @@
 @import "address.scss";
 @import "page-footer.scss";
 @import "social.scss";
-@import "heading-stripe.scss";

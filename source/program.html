@@ -11,7 +11,6 @@
     </script>
     <script src="js/picturefill.min.js" async></script>
   </head>
-  </head>
   <body class="program-page">
 
     <svg style="display: none;">
@@ -77,6 +76,7 @@
 
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="main-form__first-line container-wide">
+
           <fieldset class="main-form__cat-field container-wide fieldset-reset">
             <legend class="visually-hidden">Параметры кота</legend>
             <div class="main-form__wrapper container">
@@ -95,7 +95,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="main-form__program-field container-wide fieldset-reset">
+          <fieldset class="main-form__program-field container-wide fieldset-reset ">
             <legend class="visually-hidden">Желаемая программа</legend>
             <div class="main-form__wrapper container">
               <label class="main-form__label">
@@ -116,11 +116,12 @@
             </div>
           </fieldset>
         </div>
-        <fieldset class="main-form__contacts-field container-wide fieldset-reset">
-          <legend class="main-form__legend heading-stripe">
+
+        <fieldset class="main-form__contacts-field container-wide fieldset-reset heading-stripe-cross heading-stripe-cross--form" aria-labelledby="fake-legend-contacts">
+          <h2 id="fake-legend-contacts" class="main-form__legend heading-stripe">
             Контактные данные<br>
             (владельца кота)
-          </legend>
+          </h2>
           <div class="main-form__wrapper container">
             <label class="main-form__label main-form__label--email">
               <span class="main-form__label-text">E-mail:*</span>
@@ -138,15 +139,17 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="main-form__comment-field container-wide fieldset-reset">
-          <legend class="main-form__legend heading-stripe">Комментарий</legend>
+
+        <fieldset class="main-form__comment-field container-wide fieldset-reset heading-stripe-cross heading-stripe-cross--form" aria-labelledby="fake-legend-comment">
+          <h2 id="fake-legend-comment" class="main-form__legend heading-stripe">Комментарий</h2>
           <div class="main-form__textarea-container main-form__wrapper container">
             <label class="visually-hidden" for="comment-id">Поле для указания комментария</label>
             <textarea class="main-form__textarea" id="comment-id" name="comment">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
-        <fieldset class="main-form__add-field container-wide fieldset-reset">
-          <legend class="main-form__legend heading-stripe">Дополнительно</legend>
+
+        <fieldset class="main-form__add-field container-wide fieldset-reset heading-stripe-cross heading-stripe-cross--form" aria-labelledby="fake-legend-add">
+          <h2 id="fake-legend-add" class="main-form__legend heading-stripe">Дополнительно</h2>
           <div class="main-form__wrapper container">
             <label class="main-form__label">
               <input class="main-form__input visually-hidden" type="checkbox" name="sweetener" checked>
@@ -178,18 +181,20 @@
         </div>
       </form>
 
-      <div class="address address--grey container-wide">
-        <div class="address__wrapper container">
-          <p class="address__text">приглашаем <br> к сотрудничеству дилеров!</p>
-          <address class="address__location">ул. Большая Конюшенная, д. 19/8
-            <span class="address__city">Санкт-Петербург</span>
-          </address>
+      <div class="address">
+        <div class="address__container container-wide">
+          <div class="address__wrapper container">
+            <p class="address__text">приглашаем <br> к сотрудничеству дилеров!</p>
+            <address class="address__location">ул. Большая Конюшенная, д. 19/8
+              <span class="address__city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
         <div class="address__map"></div>
       </div>
     </main>
 
-    <footer class="page-footer container-wide">
+    <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo-wrapper">
           <a class="page-footer__logo-link" href="index.html">

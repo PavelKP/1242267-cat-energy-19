@@ -92,6 +92,8 @@
 
 @media (min-width: $desktop-width) {
   .extra {
+    max-width: 1440px;
+    padding: 0;
     padding-bottom: 85px;
   }
 
@@ -103,7 +105,9 @@
   }
 
   .extra__heading {
-    padding: 15px 0 81px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px 0 81px 40px;
   }
 
   .extra-goods {

@@ -14,8 +14,10 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    height: 100%;
-    width: 440px;
+    height: auto;
+    min-height: 125px;
+    width: 486px;
+    padding-top: 20px;
     border: none;
   }
 }
@@ -23,5 +25,8 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 50%;
+    min-height: 150px;
+    padding-top: 73px;
+    padding-left: 98px;
   }
 }

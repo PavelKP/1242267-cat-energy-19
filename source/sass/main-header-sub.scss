@@ -34,6 +34,7 @@
   .main-header-sub__heading {
     font-size: 60px;
     padding-bottom: 70px;
+    padding-top: 10px;
 
     &--small {
       padding-bottom: 44px;
@@ -51,6 +52,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header-sub__heading {
+    padding-top: 33px;
+  }
+
   .main-header-sub__description {
     padding-left: 1px;
   }

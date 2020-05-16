@@ -28,7 +28,6 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -36,16 +35,12 @@
     display: block;
     min-height: 65px;
     padding-top: 21px;
-    margin: 0;
+    margin: 0 17px;
     border: none;
 
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   .site-list__link {
@@ -69,16 +64,20 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    justify-content: flex-start;
-    padding-left: 129px;
+    justify-content: center;
+    width: 545px;
   }
 
   .site-list__item {
-    margin-right: 36px;
-    margin-left: 0;
+    padding: 0;
+    margin: 0 17px;
 
     font-size: 20px;
     line-height: 25px;
+
+    &:last-child {
+      margin-right: 17px;
+    }
   }
 
   .site-list--desktop-index .site-list__link {
