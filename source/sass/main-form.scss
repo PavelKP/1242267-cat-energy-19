@@ -436,10 +436,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-form .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  fieldset.container-wide {
+    max-width: 1440px;
+    padding: 0;
+  }
+
+  .main-form__legend {
+    max-width: 1300px;
+    padding: 30px 0 30px 40px;
+    margin: 0 auto;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   .main-form__first-line {
     display: flex;
     justify-content: space-between;
-    padding: 29px 110px 37px 110px;
+    padding: 29px 40px 37px 40px;
   }
 
   .main-form__cat-field {
@@ -458,7 +477,7 @@
     .main-form__wrapper {
       display: flex;
       justify-content: space-between;
-      padding: 46px 110px 17px 110px;
+      padding: 46px 40px 17px 40px;
     }
 
     .main-form__label {
@@ -487,12 +506,12 @@
   }
 
   .main-form__textarea-container {
-    padding: 46px 110px 38px 110px;
+    padding: 46px 40px 38px 40px;
   }
 
   .main-form__add-field {
     .main-form__wrapper {
-      padding: 27px 110px 17px 110px;
+      padding: 26px 40px 17px 40px;
       justify-content: space-between;
     }
 
@@ -502,7 +521,7 @@
   }
 
   .main-form__button-wrapper {
-    padding: 12px 110px 62px 110px;
+    padding: 12px 0 62px 0;
   }
 
   .main-form__button {

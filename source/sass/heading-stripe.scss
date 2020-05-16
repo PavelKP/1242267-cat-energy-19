@@ -34,8 +34,10 @@
 
 @media (min-width: $desktop-width) {
   .heading-stripe {
+    background-image: linear-gradient($white 100%, $white 100%);
+
     &::before {
-      max-width: 70px;
+      content: none;
     }
   }
 }
