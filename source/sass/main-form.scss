@@ -45,12 +45,12 @@
   flex-grow: 1;
   height: 45px;
   padding: 0 15px 2px 15px;
-  border: 1px solid rgba($grey-dirty, 0.5);
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   outline: none;
 
   &:hover {
-    border-color: rgba($grey-dirty, 1);
+    border-color: rgba(205, 205, 205, 1);
   }
 
   &:focus {
@@ -193,7 +193,7 @@
   min-width: 280px;
   min-height: 150px;
   padding: 12px 12px 15px 14px;
-  border: 1px solid rgba($grey-dirty, 0.5);
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   font-size: 16px;
   line-height: 20px;
@@ -202,7 +202,7 @@
   outline: none;
 
   &:hover {
-    border-color: rgba($grey-dirty, 1);
+    border-color: rgba(205, 205, 205, 1);
   }
 
   &:focus {
@@ -222,7 +222,7 @@
 
 /* outline for custom form elements */
 .main-form__input:focus + .main-form__custom-box {
-  outline: 1px solid rgba($leaf, 0.4);
+  outline: 1px solid rgba(104, 183, 56, 0.4);
 }
 
 /* invalid form */
@@ -349,7 +349,7 @@
     .main-form__wrapper {
       min-height: 196px;
       padding: 22px 15px 13px 27px;
-      border: 1px solid rgba($grey-dirty, 0.5);
+      border: 1px solid rgba(205, 205, 205, 0.5);
     }
 
     .main-form__label {
@@ -436,10 +436,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-form .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  fieldset.container-wide {
+    max-width: 1440px;
+    padding: 0;
+  }
+
+  .main-form__legend {
+    max-width: 1300px;
+    padding: 30px 0 30px 40px;
+    margin: 0 auto;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   .main-form__first-line {
     display: flex;
     justify-content: space-between;
-    padding: 29px 110px 37px 110px;
+    padding: 29px 40px 37px 40px;
   }
 
   .main-form__cat-field {
@@ -458,7 +477,7 @@
     .main-form__wrapper {
       display: flex;
       justify-content: space-between;
-      padding: 46px 110px 17px 110px;
+      padding: 46px 40px 17px 40px;
     }
 
     .main-form__label {
@@ -487,12 +506,12 @@
   }
 
   .main-form__textarea-container {
-    padding: 46px 110px 38px 110px;
+    padding: 46px 40px 38px 40px;
   }
 
   .main-form__add-field {
     .main-form__wrapper {
-      padding: 27px 110px 17px 110px;
+      padding: 26px 40px 17px 40px;
       justify-content: space-between;
     }
 
@@ -502,7 +521,7 @@
   }
 
   .main-form__button-wrapper {
-    padding: 12px 110px 62px 110px;
+    padding: 12px 0 62px 0;
   }
 
   .main-form__button {
