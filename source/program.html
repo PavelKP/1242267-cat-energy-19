@@ -12,8 +12,7 @@
       document.createElement("picture");
     </script>
     <script src="js/picturefill.min.js" async></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=fc93d848-44da-4190-85eb-41968207f60b
-    &lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fc93d848-44da-4190-85eb-41968207f60b&lang=ru_RU">
     </script>
   </head>
   <body class="program-page">
@@ -119,7 +118,7 @@
             </label>
             <label class="main-form__label  main-form__label--tel">
               <span class="main-form__label-text">Телефон:*</span>
-              <input class="main-form__input" type="tel" name="tel" size="15" placeholder="8 (960) 900-60-90" required>
+              <input class="main-form__input" type="tel" inputmode="tel" name="tel" size="15" placeholder="8 (960) 900-60-90" required>
               <svg class="main-form__icon main-form__icon--phone" width="21" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -225,7 +224,7 @@
     </footer>
 
     <script src="js/main.min.js"></script>
-    <script type="text/javascript">
+    <script>
       ymaps.ready(init);
       function init(){
 
