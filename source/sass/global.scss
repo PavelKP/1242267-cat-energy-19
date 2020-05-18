@@ -48,3 +48,10 @@ input::-ms-clear {
   display: none;
 }
 /* stylelint-enable */
+
+// for IE 11 - to style placeholder
+input:not([type="radio"]):not([type="checkbox"]),
+textarea {
+  color: $grey;
+  text-transform: uppercase;
+}
