@@ -4,42 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи - подбор программы</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       // Picture element HTML5 shiv
       document.createElement("picture");
     </script>
     <script src="js/picturefill.min.js" async></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=fc93d848-44da-4190-85eb-41968207f60b
-    &lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fc93d848-44da-4190-85eb-41968207f60b&lang=ru_RU">
     </script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init(){
-
-        var myMap = new ymaps.Map("map", {
-            center: [59.938784, 30.323126],
-            zoom: 17
-        });
-
-        var myPlacemark = new ymaps.Placemark([59.938784, 30.323126], {}, {
-            iconLayout: "default#image",
-            iconImageHref: "img/map-pin.png",
-            iconImageSize: [124, 106],
-            iconImageOffset: [-62, -106]
-        });
-
-        myMap.geoObjects.add(myPlacemark);
-
-        //console.log(myMap.getCenter());
-
-        if (window.innerWidth > 1299) {
-          myMap.setCenter([59.93908399999102, 30.319529999999999]);
-        } else {
-          myMap.setCenter([59.93878399999102, 30.323125999999966]);
-        }
-      };
-  </script>
   </head>
   <body class="program-page">
 
@@ -47,6 +21,8 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
+    <!-- classes to change menu button: page-header__logo-panel--opened, page-header__logo-panel--closed -->
+    <!-- class for hiding menu list: main-nav__minimize -->
     <header class="page-header container-wide">
       <div class="page-header__wrapper">
         <div class="page-header__logo-panel container">
@@ -130,21 +106,21 @@
         </div>
 
         <fieldset class="main-form__contacts-field container-wide fieldset-reset heading-stripe-cross heading-stripe-cross--form" aria-labelledby="fake-legend-contacts">
-          <h2 id="fake-legend-contacts" class="main-form__legend heading-stripe">
-            Контактные данные<br>
-            (владельца кота)
+          <h2 id="fake-legend-contacts" class="main-form__legend heading-stripe heading-stripe--short">
+            Контактные данные (владельца кота)
           </h2>
           <div class="main-form__wrapper container">
             <label class="main-form__label main-form__label--email">
               <span class="main-form__label-text">E-mail:*</span>
-              <input class="main-form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+              <input class="main-form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" size="15" required>
               <svg class="main-form__icon main-form__icon--mail" width="18" height="14" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </label>
             <label class="main-form__label  main-form__label--tel">
               <span class="main-form__label-text">Телефон:*</span>
-              <input class="main-form__input" type="tel" name="tel" size="15" placeholder="8 (960) 900-60-90" required>
+              <input class="main-form__input" type="tel" inputmode="tel" name="tel" placeholder="8 (960) 900-60-90" size="15"
+                required>
               <svg class="main-form__icon main-form__icon--phone" width="21" height="21" aria-hidden="true" focusable="false">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -193,7 +169,7 @@
         </div>
       </form>
 
-      <div class="address">
+      <div class="address address--grey">
         <div class="address__container container-wide">
           <div class="address__wrapper container">
             <p class="address__text">приглашаем <br> к сотрудничеству дилеров!</p>
@@ -209,7 +185,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo-wrapper">
-          <a class="page-footer__logo-link" href="index.html">
+          <a class="page-footer__logo-link" href="index.html" aria-label="На главную страницу">
             <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>
         </div>
@@ -249,6 +225,31 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>
+      ymaps.ready(init);
+      function init(){
+
+        var myMap = new ymaps.Map("map", {
+            center: [59.938784, 30.323126],
+            zoom: 17
+        });
+
+        var myPlacemark = new ymaps.Placemark([59.938784, 30.323126], {}, {
+            iconLayout: "default#image",
+            iconImageHref: "img/map-pin.png",
+            iconImageSize: [124, 106],
+            iconImageOffset: [-62, -106]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+
+        if (window.innerWidth > 1299) {
+          myMap.setCenter([59.93908399999102, 30.319529999999999]);
+        } else {
+          myMap.setCenter([59.93878399999102, 30.323125999999966]);
+        }
+      };
+  </script>
   </body>
 </html>

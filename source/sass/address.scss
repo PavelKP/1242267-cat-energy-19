@@ -1,6 +1,10 @@
 .address {
   position: relative;
   background-color: $white;
+
+  &--grey {
+    background-color: $grey-light;
+  }
 }
 
 .address__container {
@@ -34,7 +38,7 @@
 }
 
 .address__map {
-  min-height: 362px;
+  height: 362px;
 
   background-color: $grey-light;
 
@@ -55,8 +59,6 @@
   .address__wrapper {
     padding: 66px 41px 56px 41px;
     min-height: 201px;
-
-    background-color: $white;
   }
 
   .address__text {
@@ -96,6 +98,8 @@
     left: 41px;
     max-width: 569px;
     padding: 66px 89px 48px 75px;
+
+    background-color: $white;
   }
 
   .address__location {

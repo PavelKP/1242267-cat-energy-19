@@ -1,0 +1,23 @@
+/* invalid form */
+.error {
+  border: 1px solid $gentle-red;
+  box-shadow: inset 0 0 0 1px $gentle-red;
+
+  &:hover {
+    border-color: $gentle-red;
+    box-shadow: inset 0 0 0 1px $gentle-red;
+  }
+
+  &:focus {
+    border-color: $gentle-red;
+    box-shadow: inset 0 0 0 1px $gentle-red;
+
+    & + .main-form__icon {
+      fill: $gentle-red;
+    }
+  }
+
+  & + .main-form__icon {
+    fill: $gentle-red;
+  }
+}

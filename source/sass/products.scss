@@ -150,14 +150,18 @@
 
   .products__image {
     margin-bottom: 36px;
-  }
 
-  .products__image--big {
-    margin-top: -82px;
-  }
+    &--big {
+      margin-top: -82px;
+      width: 245px;
+      height: 208px;
+    }
 
-  .products__image--small {
-    margin-top: -46px;
+    &--small {
+      margin-top: -46px;
+      width: 245px;
+      height: 172px;
+    }
   }
 
   .products__description-block {
