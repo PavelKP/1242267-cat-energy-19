@@ -2,16 +2,16 @@
   background-image: linear-gradient(transparent 40px, $leaf 40px, $leaf 43px, transparent 43px);
 
   &--form {
-    background-image: linear-gradient(transparent 42px, #68b738 42px, #68b738 45px, transparent 45px);
+    background-image: linear-gradient(transparent 42px, $leaf 42px, $leaf 45px, transparent 45px);
   }
 }
 
 @media (min-width: $tablet-width) {
   .heading-stripe-cross {
-    background-image: linear-gradient(transparent 32px, #68b738 32px, #68b738 35px, transparent 35px);
+    background-image: linear-gradient(transparent 32px, $leaf 32px, $leaf 35px, transparent 35px);
 
     &--form {
-      background-image: linear-gradient(transparent 51px, #68b738 51px, #68b738 54px, transparent 54px);
+      background-image: linear-gradient(transparent 51px, $leaf 51px, $leaf 54px, transparent 54px);
     }
   }
 }
@@ -21,7 +21,7 @@
     background-image: linear-gradient(transparent 37px, $leaf 37px, $leaf 40px, transparent 40px);
 
     &--form {
-      background-image: linear-gradient(transparent 52px, #68b738 52px, #68b738 55px, transparent 55px);
+      background-image: linear-gradient(transparent 52px, $leaf 52px, $leaf 55px, transparent 55px);
     }
   }
 }

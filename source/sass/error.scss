@@ -1,23 +1,23 @@
 /* invalid form */
 .error {
-  border: 1px solid #ff8282;
-  box-shadow: inset 0 0 0 1px #ff8282;
+  border: 1px solid $gentle-red;
+  box-shadow: inset 0 0 0 1px $gentle-red;
 
   &:hover {
-    border-color: #ff8282;
-    box-shadow: inset 0 0 0 1px #ff8282;
+    border-color: $gentle-red;
+    box-shadow: inset 0 0 0 1px $gentle-red;
   }
 
   &:focus {
-    border-color: #ff8282;
-    box-shadow: inset 0 0 0 1px #ff8282;
+    border-color: $gentle-red;
+    box-shadow: inset 0 0 0 1px $gentle-red;
 
     & + .main-form__icon {
-      fill: #ff8282;
+      fill: $gentle-red;
     }
   }
 
   & + .main-form__icon {
-    fill: #ff8282;
+    fill: $gentle-red;
   }
 }

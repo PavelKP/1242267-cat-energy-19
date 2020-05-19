@@ -70,7 +70,7 @@
 
 /* input - checkboxes and radio */
 .main-form__label:hover .main-form__custom-box {
-  border-color: #bababa;
+  border-color: $metal;
 }
 
 .main-form__custom-box {
@@ -102,7 +102,7 @@
 }
 
 .main-form__input:checked + .main-form__custom-box--radio {
-  border-color: #bababa;
+  border-color: $metal;
 
   &::before {
     content: "";
@@ -299,10 +299,6 @@
 
     font-size: 36px;
     line-height: 36px;
-
-    br {
-      display: none;
-    }
   }
 
   /* cat field */
