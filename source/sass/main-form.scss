@@ -482,12 +482,12 @@
 
   .main-form__add-field {
     .main-form__wrapper {
-      padding: 26px 40px 17px 40px;
-      justify-content: space-between;
+      padding: 26px 0 17px 0;
     }
 
     .main-form__label {
       width: 245px;
+      margin: 0 40px;
     }
   }
 
