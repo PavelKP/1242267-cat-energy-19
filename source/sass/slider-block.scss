@@ -347,7 +347,7 @@
       left: 0;
       right: 0;
       top: 27px;
-      border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+      border-bottom: $grey-border-dotted;
     }
   }
 
@@ -364,16 +364,16 @@
     margin-left: -17px;
 
     border-radius: 50%;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: $scale-shadow;
 
     &:hover {
-      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: $scale-shadow-hover;
       cursor: pointer;
     }
 
     &:active {
       border-color: $leaf;
-      box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25), inset 0 0 0 1px $leaf;
+      box-shadow: $scale-shadow-active;
     }
 
     &::after {

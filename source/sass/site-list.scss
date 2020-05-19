@@ -84,11 +84,11 @@
     color: $white;
 
     &[href]:hover {
-      color: rgba(255, 255, 255, 0.6);
+      color: $menu-hover-white;
     }
 
     &[href]:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: $menu-active-white;
     }
 
     &:not([href]) {

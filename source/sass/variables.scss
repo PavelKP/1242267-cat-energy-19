@@ -20,8 +20,19 @@ $aluminum: #dcdcdc;
 $gentle-red: #ff8282;
 $grey-border: 1px solid #e6e6e6;
 $grey-border-dark: 1px solid #d9d9d9;
+$grey-border-dotted: 1px dotted rgba(0, 0, 0, 0.23);
 $menu-hover: rgba(17, 17, 17, 0.6);
 $menu-active: rgba(17, 17, 17, 0.3);
+$menu-hover-white: rgba(255, 255, 255, 0.6);
+$menu-active-white: rgba(255, 255, 255, 0.3);
+$button-green-active: rgba(255, 255, 255, 0.3);
+$button-grey-active: rgba(68, 68, 68, 0.3);
+$input-border: 1px solid rgba(205, 205, 205, 0.5);
+$input-border-hover: 1px solid rgba(205, 205, 205, 1);
+$program-link-border: 1px solid rgba(0, 0, 0, 0.1);
+$scale-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+$scale-shadow-hover: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+$scale-shadow-active: 0 3px 4px 0 rgba(0, 0, 0, 0.25), inset 0 0 0 1px $leaf;
 
 $tablet-width: 768px;
 $desktop-width: 1300px; /* 1440*/
