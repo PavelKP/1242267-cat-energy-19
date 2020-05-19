@@ -1,16 +1,22 @@
 .heading-stripe {
   display: inline-flex;
   width: auto;
+  max-width: calc(100% - 20px);
   margin: 0;
   padding-right: 20px;
 
   font-weight: normal;
 
   background-image: linear-gradient($white 100%, $white 100%);
+
+  &--short {
+    max-width: 221px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .heading-stripe {
+    max-width: calc(100% - 97px);
     margin-left: 30px;
     padding-left: 39px;
     padding-right: 40px;
@@ -19,7 +25,8 @@
 
 @media (min-width: $desktop-width) {
   .heading-stripe {
+    max-width: 1260px;
     margin: 0;
-    margin-left: 70px;
+    margin-left: calc((100% - 1300px) / 2);
   }
 }
