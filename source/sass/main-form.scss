@@ -248,6 +248,10 @@
     }
   }
 
+  .main-form__input[type="email"] {
+    padding-left: 23px;
+  }
+
   .main-form__add-field {
     padding-bottom: 0;
 
@@ -462,10 +466,6 @@
         width: 46.7%;
       }
     }
-  }
-
-  .main-form__input[type="email"] {
-    padding-left: 20px;
   }
 
   .main-form__input[type="tel"] {
