@@ -4,6 +4,8 @@
   color: $white;
   text-align: center;
 
+  background-color: rgba(0, 34, 2, 0.486); //fallback
+
   background-image:  url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(90deg, #65a93c, #63a73a),
     linear-gradient(#65a93c 305px, $white 305px);
@@ -46,6 +48,7 @@
     padding: 0;
 
     background-image: none;
+    background-color: transparent;
     color: $black;
   }
 

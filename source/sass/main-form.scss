@@ -225,30 +225,6 @@
   outline: 1px solid rgba(104, 183, 56, 0.4);
 }
 
-/* invalid form */
-.error {
-  border: 1px solid #ff8282;
-  box-shadow: inset 0 0 0 1px #ff8282;
-
-  &:hover {
-    border-color: #ff8282;
-    box-shadow: inset 0 0 0 1px #ff8282;
-  }
-
-  &:focus {
-    border-color: #ff8282;
-    box-shadow: inset 0 0 0 1px #ff8282;
-
-    & + .main-form__icon {
-      fill: #ff8282;
-    }
-  }
-
-  & + .main-form__icon {
-    fill: #ff8282;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .main-form {
     font-size: 20px;
