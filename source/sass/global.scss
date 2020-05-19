@@ -50,6 +50,8 @@ input::-ms-clear {
 /* stylelint-enable */
 
 // for IE 11 - to style placeholder
+/* Без этого кода в IE 11 стили к placeholder поля ввода не применяются */
+/* Текст внутри формы выводится в нижнем регистре и неправильного цвета*/
 input:not([type="radio"]):not([type="checkbox"]),
 textarea {
   color: $grey;
