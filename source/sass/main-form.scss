@@ -65,7 +65,7 @@
 
 .main-form__input[type="email"],
 .main-form__input[type="tel"] {
-  padding: 0 45px 3px 14px;
+  padding: 0 50px 3px 14px;
 }
 
 /* input - checkboxes and radio */
@@ -363,11 +363,6 @@
   .main-form__contacts-field .main-form__label-text {
     margin-right: 16px;
     margin-bottom: 0;
-  }
-
-  .main-form__input[type="email"],
-  .main-form__input[type="tel"] {
-    padding-right: 21px;
   }
 
   .main-form__icon {
