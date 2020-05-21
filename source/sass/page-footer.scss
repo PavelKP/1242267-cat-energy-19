@@ -32,27 +32,39 @@
 }
 
 .page-footer__copyright {
+  position: relative;
   min-height: 84px;
   padding: 15px 0 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 115px;
+    right: 27px;
+    display: block;
+    height: 74px;
+
+    background-color: transparent;
+  }
 }
 
 .page-footer__copyright-link {
-  padding-bottom: 9px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 5px;
 
   font-family: $arial;
   font-size: 16px;
   line-height: 20px;
   color: $grey;
 
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.page-footer__logo-link-academy {
   fill: $grey-brownish;
 
   &:hover {
@@ -62,6 +74,11 @@
   &:active {
     fill: $leaf;
     opacity: 0.3;
+  }
+
+  span {
+    padding-top: 6px;
+    pointer-events: none;
   }
 }
 
@@ -83,14 +100,6 @@
     width: 165px;
     min-height: auto;
     padding: 0;
-
-    &:hover svg {
-      fill: $leaf;
-    }
-
-    &:active a {
-      opacity: 0.3;
-    }
   }
 
   .page-footer__copyright-link {
@@ -100,14 +109,6 @@
     font-size: 16px;
     line-height: 20px;
     color: $grey;
-  }
-
-  .page-footer__logo-link-academy {
-    padding-top: 5px;
-
-    svg {
-      margin-left: 23px;
-    }
   }
 
   .page-footer__social {

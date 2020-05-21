@@ -9,9 +9,10 @@
     fill: $leaf;
   }
 
-  &:active {
+  svg:active {
     fill: $leaf;
     opacity: 0.3;
+    // for IE 11
   }
 }
 

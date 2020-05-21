@@ -40,6 +40,11 @@
       opacity: 0.3;
     }
   }
+
+  span {
+    pointer-events: none;
+    // for IE 11
+  }
 }
 
 .main-form__text {
