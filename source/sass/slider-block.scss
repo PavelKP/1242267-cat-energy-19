@@ -349,6 +349,18 @@
       top: 27px;
       border-bottom: $grey-border-dotted;
     }
+
+    &:hover {
+      &::after {
+        border-bottom: $grey-border-solid;
+      }
+    }
+
+    &:active {
+      &::after {
+        border-bottom: none;
+      }
+    }
   }
 
   .slider-block__button-before {
