@@ -20,6 +20,26 @@
   align-items: center;
 
   color: $black-light;
+
+  &--box {
+    &:hover .main-form__custom-box {
+      border-color: $metal;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--radio {
+    &:hover .main-form__custom-box {
+      border-color: $metal;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-form__text {
@@ -68,11 +88,6 @@
   padding: 0 50px 3px 14px;
 }
 
-/* input - checkboxes and radio */
-.main-form__label:hover .main-form__custom-box {
-  border-color: $metal;
-}
-
 .main-form__custom-box {
   position: relative;
   flex-shrink: 0;
@@ -102,8 +117,6 @@
 }
 
 .main-form__input:checked + .main-form__custom-box--radio {
-  border-color: $metal;
-
   &::before {
     content: "";
     left: 8px;
