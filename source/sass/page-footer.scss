@@ -80,6 +80,11 @@
     padding-top: 6px;
     pointer-events: none;
   }
+
+  svg {
+    pointer-events: none;
+    // for IE 11
+  }
 }
 
 @media (min-width: $tablet-width) {
