@@ -64,6 +64,7 @@
 .main-form textarea {
   color: $grey;
   text-transform: uppercase;
+  opacity: 1; // for FF
 }
 
 .main-form__input {
