@@ -75,7 +75,7 @@
   outline: none;
 
   &:hover {
-    border-color: $input-border-hover;
+    border: $input-border-hover;
   }
 
   &:focus {
@@ -220,7 +220,7 @@
   outline: none;
 
   &:hover {
-    border-color: $input-border-hover;
+    border: $input-border-hover;
   }
 
   &:focus {
