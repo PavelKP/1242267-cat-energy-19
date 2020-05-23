@@ -239,11 +239,6 @@
   }
 }
 
-/* outline for custom form elements */
-.main-form__input:focus + .main-form__custom-box {
-  outline: 1px solid rgba(104, 183, 56, 0.4);
-}
-
 @media (min-width: $tablet-width) {
   .main-form {
     font-size: 20px;
@@ -516,5 +511,10 @@
   .main-form__button {
     width: 569px;
     margin-right: 83px;
+  }
+
+  /* outline for custom form elements - only desktop */
+  .main-form__input:focus + .main-form__custom-box {
+    outline: 1px solid rgba(104, 183, 56, 0.4);
   }
 }
