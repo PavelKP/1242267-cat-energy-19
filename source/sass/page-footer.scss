@@ -11,6 +11,8 @@
 }
 
 .page-footer__logo-link {
+  cursor: pointer;
+
   &:hover {
     opacity: 0.8;
   }
@@ -81,11 +83,13 @@
   }
 
   span {
+    max-width: 125px;
     padding-top: 6px;
     pointer-events: none;
   }
 
   svg {
+    align-self: center;
     pointer-events: none;
     // for IE 11
   }

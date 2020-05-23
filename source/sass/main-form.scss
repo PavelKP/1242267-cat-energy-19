@@ -411,6 +411,7 @@
   }
 
   .main-form__button {
+    flex-shrink: 0;
     width: 283px;
     height: 52px;
     margin-right: 61px;
@@ -420,8 +421,10 @@
   }
 
   .main-form__text {
-    font-size: 16px;
     margin-top: 17px;
+
+    font-size: 16px;
+    text-align: left;
   }
 }
 

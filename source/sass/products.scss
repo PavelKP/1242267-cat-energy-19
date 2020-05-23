@@ -47,6 +47,10 @@
 .products__key,
 .products__value {
   margin: 0;
+  max-width: 60px;
+  max-height: 30px;
+
+  overflow: hidden;
 
   &--upper {
     text-transform: uppercase;
@@ -121,6 +125,11 @@
 
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .products__key,
+  .products__value {
+    max-height: 42px;
   }
 
   .products__order {

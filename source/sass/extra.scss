@@ -18,6 +18,7 @@
 }
 
 .extra-goods__product-name {
+  max-width: 200px;
   margin-top: 0;
   margin-bottom: 7px;
 
@@ -36,6 +37,16 @@
   font-size: 14px;
   line-height: 18px;
   color: $grey;
+}
+
+.extra-goods__property {
+  &:first-child {
+    max-width: 180px;
+  }
+
+  &:last-child {
+    max-width: 50px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -67,6 +78,8 @@
   }
 
   .extra-goods__product-name {
+    max-width: 300px;
+
     margin: 0;
     font-size: 20px;
   }

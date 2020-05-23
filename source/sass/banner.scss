@@ -39,6 +39,7 @@
   .banner {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: calc(100% - 60px);
     padding-top: 70px;
     padding-bottom: 77px;
@@ -79,6 +80,7 @@
   }
 
   .banner__wrapper {
+    height: 289px;
     flex-direction: column;
     align-items: center;
     padding: 64px 19px 42px 21px;

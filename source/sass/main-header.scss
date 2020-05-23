@@ -29,11 +29,15 @@
 }
 
 .main-header__description {
-  margin: 0;
+  max-height: 74px;
+  max-width: 420px;
+  margin: 0 auto;
   margin-bottom: 26px;
 
   line-height: 18px;
   text-transform: uppercase;
+
+  overflow: hidden;
 }
 
 .main-header__image {
@@ -72,6 +76,7 @@
   }
 
   .main-header__description {
+    margin-left: 0;
     margin-bottom: 48px;
 
     font-size: 20px;
@@ -101,7 +106,7 @@
 
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, $white 50%, $green-fall-1 50%);
     background-repeat: no-repeat;
-    background-size: contain, 100%;
+    background-size: 720px 696px, 100%;
     background-position: left 50vw top 0, 0 0;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {

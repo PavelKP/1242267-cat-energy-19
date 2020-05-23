@@ -42,15 +42,20 @@
 }
 
 .slider-block__key {
+  height: 29px;
+
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+
+  overflow: hidden;
 }
 
 .slider-block__value {
   position: absolute;
   left: 17px;
   top: 41px;
+  max-height: 30px;
   width: 87px;
   padding: 5px 15px;
   margin-left: 0;
@@ -61,6 +66,7 @@
   color: $grey;
 
   background-color: $grey-light;
+  overflow: hidden;
 }
 
 .slider-block__conclusion {
@@ -233,6 +239,8 @@
   }
 
   .slider-block__key {
+    height: 37px;
+
     font-size: 30px;
     line-height: 37px;
   }
